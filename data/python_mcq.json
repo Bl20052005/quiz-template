@@ -1281,6 +1281,11 @@
     "correctAnswer": "If two objects are equivalent, they must have the same hash"
   },
   {
+    "question": "If you implement __hash__, you should implement _____ as well",
+    "answers": ["__eq__", "__ne__", "__getitem__", "__getattr__", "__gt__"],
+    "correctAnswer": "__eq__"
+  },
+  {
     "question": "If we provide an __eq__ without providing a __hash__, what does Python do?",
     "answers": [
       "__hash__ is set to None",
@@ -1434,5 +1439,160 @@
       "(<class 'object'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.D'>)\n(<class 'object'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>)\n"
     ],
     "correctAnswer": "(<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)"
+  },
+  {
+    "question": "What does the following output?\nclass A(ValueError):\n  pass\n\ntry:\n  raise A\nexcept ValueError:\n  print('ValueError')\nexcept A:\n  print('A')",
+    "answers": ["ValueError", "A", "ValueError\nA", "A\nValueError\n"],
+    "correctAnswer": "ValueError"
+  },
+  {
+    "question": "Which type of recursion does the following display?\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
+    "answers": [
+      "single, direct",
+      "multiple, direct",
+      "single, indirect",
+      "multiple, indirect",
+      "backtracking\n"
+    ],
+    "correctAnswer": "single, direct"
+  },
+  {
+    "question": "Which is a better name for the following?\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
+    "answers": [
+      "power_of_2",
+      "factorial",
+      "mutual_recursion",
+      "indirect_recursion",
+      "fibbonacci_number_n\n"
+    ],
+    "correctAnswer": "power_of_2"
+  },
+  {
+    "question": "In Python, the time complexity of this function is _____, the memory cost is _____\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
+    "answers": ["O(n)\nO(n)", "O(n)\nO(1)", "O(1)\nO(1)", "O(1)\nO(n)\n"],
+    "correctAnswer": "O(n)\nO(n)"
+  },
+  {
+    "question": "When a function f has to call a function g, Python needs to remember...",
+    "answers": [
+      "where f left off",
+      "where f is going to",
+      "when g needs to come back to f",
+      "when does the recursion hit the base case"
+    ],
+    "correctAnswer": "where f left off"
+  },
+  {
+    "question": "Which function implements tail call recursion?\ndef f(a, b):\n  if a > b:\n    return 1\n  else:\n    return f(a-1, b)",
+    "answers": [
+      "def a():\n  c = 1 + 1\n  return f(10, 5)",
+      "def a():\n  return f(10, 5) + 20",
+      "def a():\n  return 20 + f(10, 5)",
+      "def a():\n  a = f(10, 5)\n  c = 1 + a\n  return c\n"
+    ],
+    "correctAnswer": "def a():\n  c = 1 + 1\n  return f(10, 5)"
+  },
+  {
+    "question": "If we performed tail-call elimination, the following program's _____ would be _____\ndef a(start, acc):\n  if start < 0:\n    return 1\n  return a(start - 2, acc + 1)",
+    "answers": [
+      "memory usage, O(1)",
+      "time complexity, O(1)",
+      "memory usage, O(n)",
+      "time complexity, O(n)\n"
+    ],
+    "correctAnswer": "memory usage, O(1)"
+  },
+  {
+    "question": "If we performed tail-call elimination, the following program's _____ would be _____\ndef a(start, acc):\n  if start < 0:\n    return 1\n  return a(start - 2, acc) + 1",
+    "answers": [
+      "memory usage, O(n)",
+      "time complexity, O(1)",
+      "memory usage, O(1)",
+      "time complexity, O(n^2)\n"
+    ],
+    "correctAnswer": "memory usage, O(n)"
+  },
+  {
+    "question": "Does Python actually perform tail call elimination? If not, why not? If so, why?",
+    "answers": [
+      "No, because it affects the ability to produce good traceback messages",
+      "No, because it affect the contexts of Python's internal recursion manager",
+      "Yes, because then we can write much faster and better programs",
+      "Yes, because it has no bearing on Python's internal recursion manager"
+    ],
+    "correctAnswer": "No, because it affects the ability to produce good traceback messages"
+  },
+  {
+    "question": "If we wanted tail-call elimination, how would we refactor this program?\ndef a(start):\n  if start <= 0:\n    return 0\n  return a(start - 1) + 1",
+    "answers": [
+      "def a(start):\n  def a_prime(start, acc):\n    if start <= 0:\n      return acc\n    else:\n      return a_prime(start - 1, acc + 1)\n  return a_prime(start, 0)",
+      "def a(start):\n  if start <= 0:\n    return 0\n  return a(start - 1) + 1",
+      "def a(start):\n  if start <= 0:\n    return 0\n  return 1 + a(start - 1)",
+      "def a(start):\n  def a_prime(start):\n    if start <= 0:\n      return 0\n    else:\n      return 1 + a_prime(start - 1)\n  return a_prime(start)\n"
+    ],
+    "correctAnswer": "def a(start):\n  def a_prime(start, acc):\n    if start <= 0:\n      return acc\n    else:\n      return a_prime(start - 1, acc + 1)\n  return a_prime(start, 0)"
+  },
+  {
+    "question": "What does the following program exhibit?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)",
+    "answers": [
+      "multiple recursion",
+      "mutual recursion",
+      "single recursion",
+      "factorialized recursion\n"
+    ],
+    "correctAnswer": "multiple recursion"
+  },
+  {
+    "question": "What would the following print?\ndef f(n):\n  print(f\"f {n}, \", end='')\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)\n\nf(4)",
+    "answers": [
+      "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), ",
+      "f(4), f(3), f(2), f(1), f(0), f(2), f(1), f(0), f(3), f(2), f(1), f(0), ",
+      "f(4), f(3), f(2), f(2), f(1), f(1), f(0), f(1), f(0), ",
+      "f(0), f(1), f(0), f(1), f(1), f(2), f(2), f(3), f(4), ",
+      "f(0), f(1), f(2), f(1), f(0), f(1), f(2), f(3), f(4), \n"
+    ],
+    "correctAnswer": "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), "
+  },
+  {
+    "question": "What would the following print?\ndef f(n):\n  print(f\"f {n}, \", end='')\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  if n == 2:\n    return 2\n  return f(n-1) + f(n-2)\n\nf(4)",
+    "answers": [
+      "f(4), f(3), f(2), f(1), f(2), ",
+      "f(4), f(3), ",
+      "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), ",
+      "f(4)",
+      "f(4), f(3), f(2), f(1), \n"
+    ],
+    "correctAnswer": "f(4), f(3), f(2), f(1), f(2), "
+  },
+  {
+    "question": "What would the following print?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  if n == 2:\n    return 2\n  print(f\"f {n}, \", end='')\n  return f(n-1) + f(n-2)\n\nf(4)",
+    "answers": [
+      "f(4), f(3), ",
+      "f(4), f(3), f(2), f(1), f(2), ",
+      "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), ",
+      "f(4)",
+      "f(4), f(3), f(2), f(1), \n"
+    ],
+    "correctAnswer": "f(4), f(3), "
+  },
+  {
+    "question": "What is Memoization?",
+    "answers": [
+      "Remembering the value of a previous call so we can use it for future calls",
+      "A software design pattern commonly employed in distributed systems",
+      "A technique used to optimize memory allocation in computer graphics",
+      "A cryptographic hashing algorithm like __hash__ in Python"
+    ],
+    "correctAnswer": "Remembering the value of a previous call so we can use it for future calls"
+  },
+  {
+    "question": "Which of the following is a memoized version of the following?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)",
+    "answers": [
+      "def f(n):\n  final = [None] * max(n + 1, 2)\n  final[0] = 1\n  final[1] = 2\n\n  def f_memo(n):\n    if final[n] is not None:\n      return final[n]\n    else:\n      final[n] = f_memo(n-1) + f_memo(n-2)\n      return final[n]\n\n  return f_memo(n)",
+      "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n\n  def f_memo(func):\n    memo = {}\n    def helper(x):\n      if x not in memo:\n        memo[x] = func(x)\n      return memo[x]\n    return helper\n  return f_memo(f)",
+      "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  \n  def memoize(n):\n    memo = {}\n    if n in memo:\n      memo[n] = f(n-1) + f(n-2)\n    return memo[n]\n  \n  return memoize(n)",
+      "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  \n  def memoize(n):\n    memo = {}\n    if n not in memo:\n      memo[n] = f(n-1) + f(n-2)\n    return memo[n]\n  \n  return memoize(n)\n"
+    ],
+    "correctAnswer": "def f(n):\n  final = [None] * max(n + 1, 2)\n  final[0] = 1\n  final[1] = 2\n\n  def f_memo(n):\n    if final[n] is not None:\n      return final[n]\n    else:\n      final[n] = f_memo(n-1) + f_memo(n-2)\n      return final[n]\n\n  return f_memo(n)"
   }
 ]

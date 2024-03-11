@@ -6,6 +6,7 @@ import { useState } from "react";
 function MultipleChoiceStart() {
   const [num, setNum] = useState(10);
   const [time, setTime] = useState("unlimited");
+  const [selected, setSelected] = useState(4);
 
   function handleSetNum(e) {
     if (
@@ -16,14 +17,18 @@ function MultipleChoiceStart() {
     }
   }
 
-  function handleChangeTime(t) {
+  function handleChangeTime(t, select) {
     setTime(t);
+    setSelected(select);
   }
 
   return (
-    <div>
-      <label htmlFor="questions">How many questions (1-100)</label>
+    <div className={styles.wrapper}>
+      <label className={styles.questionLabel} htmlFor="questions">
+        How many questions? (1-100)
+      </label>
       <input
+        className={styles.questionInput}
         type="number"
         id="questions"
         name="questions"
@@ -32,19 +37,58 @@ function MultipleChoiceStart() {
         value={num}
         onChange={(e) => handleSetNum(e)}
       />
-      <div>time for each question:</div>
-      <div onClick={() => handleChangeTime(15)}>15 seconds</div>
-      <div onClick={() => handleChangeTime(30)}>30 seconds</div>
-      <div onClick={() => handleChangeTime(60)}>1 minute</div>
-      <div onClick={() => handleChangeTime(120)}>2 minutes</div>
-      <div onClick={() => handleChangeTime("unlimited")}>unlimited time</div>
-      <ChangeButton
-        to={`quiz/${num ? num : 10}/${
-          time != "unlimited" ? time * (num ? num : 10) : "unlimited"
-        }`}
-        text="continue"
-      />
-      <ChangeButton to=".." text="back" />
+      <div className={styles.timesLabel}>time for each question:</div>
+      <div className={styles.times}>
+        <div
+          className={
+            selected == 0 ? `${styles.time} ${styles.selected}` : styles.time
+          }
+          onClick={() => handleChangeTime(15, 0)}
+        >
+          15 seconds
+        </div>
+        <div
+          className={
+            selected == 1 ? `${styles.time} ${styles.selected}` : styles.time
+          }
+          onClick={() => handleChangeTime(30, 1)}
+        >
+          30 seconds
+        </div>
+        <div
+          className={
+            selected == 2 ? `${styles.time} ${styles.selected}` : styles.time
+          }
+          onClick={() => handleChangeTime(60, 2)}
+        >
+          1 minute
+        </div>
+        <div
+          className={
+            selected == 3 ? `${styles.time} ${styles.selected}` : styles.time
+          }
+          onClick={() => handleChangeTime(120, 3)}
+        >
+          2 minutes
+        </div>
+        <div
+          className={
+            selected == 4 ? `${styles.time} ${styles.selected}` : styles.time
+          }
+          onClick={() => handleChangeTime("unlimited", 4)}
+        >
+          unlimited time
+        </div>
+      </div>
+      <div className={styles.buttons}>
+        <ChangeButton
+          to={`quiz/${num ? num : 10}/${
+            time != "unlimited" ? time * (num ? num : 10) : "unlimited"
+          }`}
+          text="continue"
+        />
+        <ChangeButton to=".." text="back" />
+      </div>
       <Outlet />
     </div>
   );

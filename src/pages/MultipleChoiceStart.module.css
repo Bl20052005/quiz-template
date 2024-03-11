@@ -1,0 +1,55 @@
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.questionLabel {
+  font-size: 25px;
+}
+
+.questionInput {
+  border: 2px solid rgb(182, 182, 255);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(243, 243, 243);
+}
+
+.timesLabel {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  border: 2px solid rgb(182, 182, 255);
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.time {
+  cursor: pointer;
+}
+
+.selected {
+  color: rgb(255, 255, 119);
+}
+
+.buttons {
+  width: 20%;
+  min-width: 200px;
+  display: flex;
+  gap: 25px;
+}

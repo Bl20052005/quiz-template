@@ -1,0 +1,26 @@
+.answer {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.selected {
+  border: 2px solid rgb(91, 195, 255);
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.correctAnswer {
+  border: 2px solid green;
+}
+
+.incorrectAnswer {
+  border: 2px solid red;
+}

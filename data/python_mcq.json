@@ -1,0 +1,1438 @@
+[
+  {
+    "question": "What is truthiness?",
+    "answers": [
+      "what bool value something evaluates to",
+      "what int value something evaluates to",
+      "what str value something evaluates to",
+      "what class value something evaluates to"
+    ],
+    "correctAnswer": "what bool value something evaluates to"
+  },
+  {
+    "question": "What is dir()?",
+    "answers": [
+      "it asks \"what's avaliable in this current scope?\"",
+      "it asks \"what's not here in this current scope?\"",
+      "it asks \"what can we do in all scopes?\"",
+      "it asks \"what is going on in other scopes?\""
+    ],
+    "correctAnswer": "it asks \"what's avaliable in this current scope?\""
+  },
+  {
+    "question": "What is __builtins__?",
+    "answers": [
+      "a dictionary in which is stored all default python objects / classes / methods",
+      "a dictionary in which is stored all user-defined attributes",
+      "a dictionary in which is stored all user-defined attributes and default python objects / classes / methods",
+      "a dictionary that only exists sometimes, not all the time"
+    ],
+    "correctAnswer": "a dictionary in which is stored all default python objects / classes / methods"
+  },
+  {
+    "question": "__builtins__['False'] is False would return?",
+    "answers": ["True", "False"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "can we modify values in __builtins__?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "What can we do to __builtins__?",
+    "answers": ["all of these", "Add", "Delete", "Replace"],
+    "correctAnswer": "all of these"
+  },
+  {
+    "question": "would dir() change if we added a varaible called z?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "would dir() change if we added a function (using def) called z?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "How is def different from storing a function in a varaible yourself?",
+    "answers": [
+      "def gives the function an explicit name",
+      "def does not give functions names",
+      "there is no difference"
+    ],
+    "correctAnswer": "def gives the function an explicit name"
+  },
+  {
+    "question": "What is globals()?",
+    "answers": [
+      "A dictionary of all globally accessible things within a module",
+      "A dictionary of all local variables"
+    ],
+    "correctAnswer": "A dictionary of all globally accessible things within a module"
+  },
+  {
+    "question": "What is locals()?",
+    "answers": [
+      "A dictionary of all local variables",
+      "A dictionary of all globally accessible things within a module"
+    ],
+    "correctAnswer": "A dictionary of all local variables"
+  },
+  {
+    "question": "if locals() is called in a function, what would you expect it to return?",
+    "answers": ["All varaibles within the function"],
+    "correctAnswer": "All varaibles within the function"
+  },
+  {
+    "question": "what is the LEGB rule?",
+    "answers": [
+      "Local, Enclosing, Global, Built-in",
+      "Local, Enlarged, Global, Basic",
+      "List, Errors, Global, Bool",
+      "Misspelling of lego :)"
+    ],
+    "correctAnswer": "Local, Enclosing, Global, Built-in"
+  },
+  {
+    "question": "What does the LEGB rule refer to?",
+    "answers": ["scoping", "overriding", "inheritance", "module specification"],
+    "correctAnswer": "scoping"
+  },
+  {
+    "question": "What does \"shadowing\" in the context of identifiers mean?",
+    "answers": [
+      "When in a local scope, a variable has the same name as another outside of its scope",
+      "when in a global scope, a variable cannot be accessed within another local scope",
+      "when in a module, importing from another module leads to methods being available"
+    ],
+    "correctAnswer": "When in a local scope, a variable has the same name as another outside of its scope"
+  },
+  {
+    "question": "how does importing affect dir()?",
+    "answers": [
+      "the imported module / method gets added to dir()",
+      "dir() does not change",
+      "dir() does not change, but __builtins__ does change",
+      "dir() will still give the output of the current path to the file"
+    ],
+    "correctAnswer": "the imported module / method gets added to dir()"
+  },
+  {
+    "question": "why is it a bad idea to do import *?",
+    "answers": [
+      "because we're importing too many top-level identifiers",
+      "because we introduce the risk of injection attacks",
+      "because it is simply a tacky way of writing import (module)",
+      "because it risks us being unable to save in many IDEs"
+    ],
+    "correctAnswer": "because we're importing too many top-level identifiers"
+  },
+  {
+    "question": "can we use import in a function / method?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "A module is loaded _____",
+    "answers": [
+      "only the first time it's imported",
+      "every time it's imported",
+      "when it's not imported",
+      "always",
+      "never"
+    ],
+    "correctAnswer": "only the first time it's imported"
+  },
+  {
+    "question": "what is __dict__?",
+    "answers": [
+      "A dictionary of all attributes of an object",
+      "A dictionary of all methods of an object",
+      "A dictionary of all functional components of an object",
+      "A dictionary of all errors in an object"
+    ],
+    "correctAnswer": "A dictionary of all attributes of an object"
+  },
+  {
+    "question": "What can we do to a __dict__?",
+    "answers": ["all of these", "Add", "Delete", "Replace"],
+    "correctAnswer": "all of these"
+  },
+  {
+    "question": "will methods appear in a class' __dict__?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "Will a method of a class be stored in the class' or its object's __dict__?",
+    "answers": ["class", "object"],
+    "correctAnswer": "class"
+  },
+  {
+    "question": "difference between mappingproxy and dictionary?",
+    "answers": [
+      "We can't write to a mappingproxy",
+      "We can't read a mappingproxy",
+      "We can't open a mappingproxy as a file"
+    ],
+    "correctAnswer": "We can't write to a mappingproxy"
+  },
+  {
+    "question": "when we define a value in a class (def or variable), it is a?",
+    "answers": [
+      "class attribute",
+      "object attribute",
+      "unnamed attribute",
+      "AttributeError"
+    ],
+    "correctAnswer": "class attribute"
+  },
+  {
+    "question": "when we store a value in an object, it is a?",
+    "answers": [
+      "object attribute",
+      "class attribute",
+      "unnamed attribute",
+      "AttributeError"
+    ],
+    "correctAnswer": "object attribute"
+  },
+  {
+    "question": "when we access an attribute of an object, python first checks the _____, then the _____",
+    "answers": [
+      "object / class",
+      "class / object",
+      "attribute / name",
+      "name / attribute"
+    ],
+    "correctAnswer": "object / class"
+  },
+  {
+    "question": "if we wanted a method to be a class attribute that does not return a new class, we would put a _____ on top, which is _____?",
+    "answers": [
+      "decorator / @staticmethod",
+      "decorator / @classmethod",
+      "method / @staticmethod",
+      "method / @classmethod"
+    ],
+    "correctAnswer": "decorator / @staticmethod"
+  },
+  {
+    "question": "if we wanted a method to be a class attribute that does indeed return a new class, we would put a _____ on top, which is _____?",
+    "answers": [
+      "decorator / @classmethod",
+      "decorator / @staticmethod",
+      "method / @staticmethod",
+      "method / @classmethod"
+    ],
+    "correctAnswer": "decorator / @classmethod"
+  },
+  {
+    "question": "what is the difference between classmethod and staticmethod?",
+    "answers": [
+      "classmethod returns a new class, but staticmethod only returns methods or varaibles within a class",
+      "staticmethod returns a new class, but classmethod only returns methods or varaibles within a class",
+      "staticmethod returns a function within a class, but classmethod returns a varaible within a class",
+      "classmethod returns a function within a class, but staticmethod returns a varaible within a class"
+    ],
+    "correctAnswer": "classmethod returns a new class, but staticmethod only returns methods or varaibles within a class"
+  },
+  {
+    "question": "_____ comes first, _____ comes second?",
+    "answers": [
+      "positional, keyword",
+      "keyword, positional",
+      "unpacking, keyword",
+      "keyword, unpacking"
+    ],
+    "correctAnswer": "positional, keyword"
+  },
+  {
+    "question": "what is a positional argument?",
+    "answers": [
+      "an argument matched with the order it's provided",
+      "an argument matched opposite to the order provided",
+      "an argument matched based on the paramater's names",
+      "an argument using unpacking operators"
+    ],
+    "correctAnswer": "an argument matched with the order it's provided"
+  },
+  {
+    "question": "what is a keyword argument?",
+    "answers": [
+      "an argument matched based on the paramater's names",
+      "an argument matched with the order it's provided",
+      "an argument matched opposite to the order provided",
+      "an argument using unpacking operators"
+    ],
+    "correctAnswer": "an argument matched based on the paramater's names"
+  },
+  {
+    "question": "what does *variable denote?",
+    "answers": [
+      "iterable unpacking",
+      "dictionary unpacking",
+      "dictionary packing",
+      "iterable pre-packing",
+      "iterable post-packing"
+    ],
+    "correctAnswer": "iterable unpacking"
+  },
+  {
+    "question": "what does def f(*variable) denote?",
+    "answers": [
+      "iterable packing",
+      "dictionary unpacking",
+      "iterable unpacking",
+      "iterable pre-packing",
+      "iterable post-packing"
+    ],
+    "correctAnswer": "iterable packing"
+  },
+  {
+    "question": "what does unpacking do?",
+    "answers": [
+      "it seperates an iterable into its individual elements",
+      "it takes individual elements into an iterable",
+      "it makes a generator from an iterable",
+      "it takes individual elements and makes a generator"
+    ],
+    "correctAnswer": "it seperates an iterable into its individual elements"
+  },
+  {
+    "question": "does unpacking require an iterable with exactly as many elements as there are parameters?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "does unpacking have to be the only argument in a function call?",
+    "answers": ["No", "Yes"],
+    "correctAnswer": "No"
+  },
+  {
+    "question": "what does **variable denote?",
+    "answers": [
+      "dictionary unpacking",
+      "iterable unpacking",
+      "dictionary packing",
+      "iterable packing",
+      "dictionary pre-packing"
+    ],
+    "correctAnswer": "dictionary unpacking"
+  },
+  {
+    "question": "what does a default argument look like?",
+    "answers": ["x = False", "x", "x -> Hello", "x : Hello"],
+    "correctAnswer": "x = False"
+  },
+  {
+    "question": "default arguments must go at the _____ of function paramaters?",
+    "answers": ["end", "beginning", "middle", "boundaries"],
+    "correctAnswer": "end"
+  },
+  {
+    "question": "which one of these should you not write as a default argument?",
+    "answers": ["x = []", "x = \"\"", "x = None", "x = ()", "x = 1"],
+    "correctAnswer": "x = []"
+  },
+  {
+    "question": "which one of these is valid?",
+    "answers": [
+      "def f(a, *b, **c)",
+      "def f(*a, *b, *c)",
+      "def f(*a, **b, *c)",
+      "def f(a, *b, *c)",
+      "def f(a = 1, *b = [1, 2])"
+    ],
+    "correctAnswer": "def f(a, *b, **c)"
+  },
+  {
+    "question": "what does f(a, *, b) mean?",
+    "answers": [
+      "b must be passed as a keyword argument",
+      "a must be passed as a keyword argument",
+      "a must be passed as a positional argument",
+      "b must be passed as a positional argument"
+    ],
+    "correctAnswer": "b must be passed as a keyword argument"
+  },
+  {
+    "question": "what does f(a, /, b) mean?",
+    "answers": [
+      "a must be passed as a positional argument",
+      "b must be passed as a keyword argument",
+      "a must be passed as a keyword argument",
+      "b must be passed as a positional argument"
+    ],
+    "correctAnswer": "a must be passed as a positional argument"
+  },
+  {
+    "question": "what does f(a, /, *, b) mean?",
+    "answers": [
+      "a must be passed as a positional argument and b must be a keyword argument",
+      "b must be passed as a positional argument and a must be a keyword argument",
+      "a must be passed as a positional argument and b must be a positional argument",
+      "b must be passed as a keyword argument and a must be a keyword argument"
+    ],
+    "correctAnswer": "a must be passed as a positional argument and b must be a keyword argument"
+  },
+  {
+    "question": "is f(a, *, /, b) legal?",
+    "answers": ["No", "Yes"],
+    "correctAnswer": "No"
+  },
+  {
+    "question": "what is a context manager?",
+    "answers": [
+      "something that performs an \"automatic wrap-up\"",
+      "something that performs \"deletion operations\"",
+      "a protocol that supports __eq__, __lt__, and __le__",
+      "a protocol that supports __init__"
+    ],
+    "correctAnswer": "something that performs an \"automatic wrap-up\""
+  },
+  {
+    "question": "what protocol does the Python method with follow?",
+    "answers": [
+      "context manager",
+      "generator",
+      "iterator",
+      "inheritance",
+      "abstract base class"
+    ],
+    "correctAnswer": "context manager"
+  },
+  {
+    "question": "what are context managers useful for?",
+    "answers": ["all of these", "sockets", "files", "unittests"],
+    "correctAnswer": "all of these"
+  },
+  {
+    "question": "what does with self.assertRaises(ValueError) mean?",
+    "answers": [
+      "if a ValueError is raised, this is expected, and the program exits normally; otherwise, an error is raised",
+      "if a ValueError is raised, this is expected, and the program will raise an error",
+      "if a ValueError is not raised, this is expected, and the program exits normally; otherwise, an error is raised",
+      "if a ValueError is not raised, then this is not expected, but the program shouldn't do anything"
+    ],
+    "correctAnswer": "if a ValueError is raised, this is expected, and the program exits normally; otherwise, an error is raised"
+  },
+  {
+    "question": "how do I redirect standard output to a variable named \"output\" instead of the shell?",
+    "answers": [
+      "with contextlib.redirect_stdout(io.StringIO()) as output:",
+      "with output as contextlib.redirect_stdout(io.StringIO()):",
+      "with io.StringIO() as output:",
+      "with redirect_stdout(String()) as output:"
+    ],
+    "correctAnswer": "with contextlib.redirect_stdout(io.StringIO()) as output:"
+  },
+  {
+    "question": "what is a protocol in Python?",
+    "answers": [
+      "when an object has certain attributes, python knows that to do with them",
+      "analogous to \"goose typing\" in terms of inheritance",
+      "a way for Python to communicate to other languages such as SQL",
+      "if an object does not have certain attributes, python will raise an error"
+    ],
+    "correctAnswer": "when an object has certain attributes, python knows that to do with them"
+  },
+  {
+    "question": "what dunders included in the context manager protocol?",
+    "answers": [
+      "__enter__, __exit__",
+      "__enter__, __out__",
+      "__in__, __out__",
+      "__in__, __exit__",
+      "__entered__, __exited__"
+    ],
+    "correctAnswer": "__enter__, __exit__"
+  },
+  {
+    "question": "what should we return in __exit__ if we want to stop raising an exception?",
+    "answers": ["True", "False", "0", "-1", "None"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "typically, what does __enter__ return?",
+    "answers": ["self", "None", "\"\"", "0", "-1"],
+    "correctAnswer": "self"
+  },
+  {
+    "question": "what does __exit__ take in?",
+    "answers": [
+      "__exit__(self, exc_type, exc_value, exc_traceback)",
+      "__exit__(self, exc)",
+      "__exit__(self, other)",
+      "__exit__(self, exc_value, exc_traceback)"
+    ],
+    "correctAnswer": "__exit__(self, exc_type, exc_value, exc_traceback)"
+  },
+  {
+    "question": "what is asymptotic analysis?",
+    "answers": [
+      "a way to measure how an algorithm changes as the size of input / problem changes",
+      "a way to measure how fast an algorithm is in regards to its input",
+      "a way to measure how much memory an algorithm is using in regards to its input",
+      "a way to measure algorithms analagous to \"big O\" notation"
+    ],
+    "correctAnswer": "a way to measure how an algorithm changes as the size of input / problem changes"
+  },
+  {
+    "question": "if you walk across a room step by step, assuming your steps and the size of the room are constant, a graph of time to cross vs width of the room should be?",
+    "answers": ["linear", "exponential", "constant", "factorialized"],
+    "correctAnswer": "linear"
+  },
+  {
+    "question": "if you are teleported across a room, a graph of time to cross vs width of the room should be?",
+    "answers": ["constant", "linear", "exponential", "factorialized"],
+    "correctAnswer": "constant"
+  },
+  {
+    "question": "if an algorithm runs in n^2 + 4n + 5 time, which term do we care about?",
+    "answers": ["n^2", "4n", "5", "none of them"],
+    "correctAnswer": "n^2"
+  },
+  {
+    "question": "if an algorithm runs in n^3 + n^2 time, we can say its big-O is?",
+    "answers": ["n^3", "n^2", "n", "1"],
+    "correctAnswer": "n^3"
+  },
+  {
+    "question": "if an algorithm runs in n^3 + n^2 time, we can say its big-O is?",
+    "answers": ["all of these", "n^3", "n^4", "n^5"],
+    "correctAnswer": "all of these"
+  },
+  {
+    "question": "if an algorithm runs in n^3 + n^2 time, we can say its closest-fit big-O is?",
+    "answers": ["n^3", "n^4", "n^5", "all of these"],
+    "correctAnswer": "n^3"
+  },
+  {
+    "question": "if an algorithm appends one element to a list for each element in the input, its closest-fit big O memory usage is?",
+    "answers": ["n", "1", "n^2", "n!", "e^n"],
+    "correctAnswer": "n"
+  },
+  {
+    "question": "if an algorithm appends one element to a list for each element in the input, but does this for every element in the input, its closest-fit big O time is?",
+    "answers": ["n^2", "1", "n", "n!", "e^n"],
+    "correctAnswer": "n^2"
+  },
+  {
+    "question": "why is big-O notation useful?",
+    "answers": [
+      "it allows us to ignore the lower-level details and focus on the function's rate of growth",
+      "it allows us to ignore the rate of growth and focus on the function's details",
+      "it allows us to precisely determine how much time / memory a function will take up",
+      "it allows us to understand the internals of a function much better"
+    ],
+    "correctAnswer": "it allows us to ignore the lower-level details and focus on the function's rate of growth"
+  },
+  {
+    "question": "what should a python list be made up of?",
+    "answers": [
+      "reference to a block of memory, its size, its capacity",
+      "reference to only its size and capacity",
+      "reference to its start, step and end",
+      "ability to know exactly where it's current iterated index is"
+    ],
+    "correctAnswer": "reference to a block of memory, its size, its capacity"
+  },
+  {
+    "question": "indexing for a list uses?",
+    "answers": ["constant time", "exponential time", "n^2 time", "n time"],
+    "correctAnswer": "constant time"
+  },
+  {
+    "question": "if a list is randomly (or unknowingly) organized, the common algorithm we use to search for an element is called?",
+    "answers": [
+      "sequential / linear search",
+      "binary search",
+      "quicksearch",
+      "merge search",
+      "PQ search"
+    ],
+    "correctAnswer": "sequential / linear search"
+  },
+  {
+    "question": "What is the time-complexity of sequential search in the best case scenario?",
+    "answers": ["1", "n", "n^2", "n^3", "log n"],
+    "correctAnswer": "1"
+  },
+  {
+    "question": "What is the time-complexity of sequential search in the worst case scenario?",
+    "answers": ["n", "1", "n^2", "n^3", "log n"],
+    "correctAnswer": "n"
+  },
+  {
+    "question": "The algorithm of binary search neccessitates that?",
+    "answers": [
+      "the list be ordered in ascending / descending order",
+      "the list be ordered in random order",
+      "the list be ordered in a tuple-like order",
+      "does not require the list to be ordered in any way"
+    ],
+    "correctAnswer": "the list be ordered in ascending / descending order"
+  },
+  {
+    "question": "The binary search procedure is?",
+    "answers": [
+      "pick the middle element, compare it to the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half",
+      "pick the smallest element, compare it to the desired element; then increase sequentially until you reach your desired element",
+      "pick the largest element, compare it to the desired element; then decrease sequentially until you reach your desired element",
+      "pick the middle element, compare it to the desired element; then compare the current index with the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half"
+    ],
+    "correctAnswer": "pick the middle element, compare it to the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half"
+  },
+  {
+    "question": "What is the time-complexity of binary search overall?",
+    "answers": ["log n", "1", "n", "n^2", "n^3"],
+    "correctAnswer": "log n"
+  },
+  {
+    "question": "What is the memory-complexity of binary search overall?",
+    "answers": ["1", "log n", "n", "n^2", "n^3"],
+    "correctAnswer": "1"
+  },
+  {
+    "question": "Why do we not always use binary search if it's so efficient?",
+    "answers": [
+      "all of these",
+      "Because not all lists are stable, some will need to constantly add and remove elements, and ordering them could take far more time",
+      "Because not all lists can be sorted in a non-trivial amount of time, and thus cannot be searched using binary search",
+      "Because not all lists are sorted, and therefore cannot be searched using binary search"
+    ],
+    "correctAnswer": "all of these"
+  },
+  {
+    "question": "What is a relational database?",
+    "answers": [
+      "A database that stores data with explicit correlations to one another (like students and courses)",
+      "A database that stores data with miminal correlations to one another (like rocks and students)",
+      "A database that can be sorted efficiently (like a priority queue)",
+      "A database that is both efficient and effective at all types of problems"
+    ],
+    "correctAnswer": "A database that stores data with explicit correlations to one another (like students and courses)"
+  },
+  {
+    "question": "Which can be an example of a primary key?",
+    "answers": [
+      "Taxpayer ID",
+      "Customer name",
+      "Payment amount",
+      "Course units"
+    ],
+    "correctAnswer": "Taxpayer ID"
+  },
+  {
+    "question": "Which one of these is a many to many relationship?",
+    "answers": [
+      "Customers to cart items",
+      "class to professor",
+      "primary key to rows",
+      "Student to their ID"
+    ],
+    "correctAnswer": "Customers to cart items"
+  },
+  {
+    "question": "Which one of these is a one to one relationship?",
+    "answers": [
+      "primary key to rows",
+      "Customers to cart items",
+      "class to professor",
+      "people to names"
+    ],
+    "correctAnswer": "primary key to rows"
+  },
+  {
+    "question": "When we store one table's primary key in some other table, it is typically referred to as?",
+    "answers": ["Foreign key", "Primary key", "Secondary key", "Identity key"],
+    "correctAnswer": "Foreign key"
+  },
+  {
+    "question": "Typically, if a DBMS enforces referential integrity, which of the following will it prevent?",
+    "answers": [
+      "if we store a value that has an invalid foriegn key, then it would fail automatically",
+      "if we store a value that has an invalid primary key, then it would fail automatically",
+      "if we store a value that has an invalid data type, then it would fail automatically",
+      "if we store a value that has an invalid null type, then it would fail automatically"
+    ],
+    "correctAnswer": "if we store a value that has an invalid foriegn key, then it would fail automatically"
+  },
+  {
+    "question": "Which of these is a valid way to create a table person with rows person_id, name, and age?",
+    "answers": [
+      "CREATE TABLE person(\n    person_id INTEGER PRIMARY KEY,\n    name TEXT,\n    age INTEGER\n) STRICT;",
+      "CREATE TABLE person(\n    person_id PRIMARY KEY,\n    name TEXT,\n    age INTEGER\n) STRICT;",
+      "CREATE TABLE person(\n    person_id,\n    name,\n    age\n) STRICT;",
+      "CREATE TABLE person(\n    person_id INTEGER;\n    name TEXT;\n    age INTEGER;\n) STRICT;\n"
+    ],
+    "correctAnswer": "CREATE TABLE person(\n    person_id INTEGER PRIMARY KEY,\n    name TEXT,\n    age INTEGER\n) STRICT;"
+  },
+  {
+    "question": "In order to run a statement in python's sqlite3, we use which command?",
+    "answers": [
+      "connection.execute('SELECT name FROM example;')",
+      "connection.connect('SELECT name FROM example;')",
+      "connection.fetchone('SELECT name FROM example;')",
+      "connection.close('SELECT name FROM example;')"
+    ],
+    "correctAnswer": "connection.execute('SELECT name FROM example;')"
+  },
+  {
+    "question": "Which of these commands is a valid way to run a sqlite3 command?",
+    "answers": [
+      "connection = sqlite3.connect(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()",
+      "connection = sqlite3.connect(':memory')\ncursor = connection.execute('SELECT name FROM example;')\nconnection.fetchone()\nconnection.close()",
+      "connection = sqlite3.execute(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()",
+      "connection = cursor.execute(':memory')\ncursor = connection.execute('SELECT name FROM example;')\nconnection.fetchone()\nconnection.close()\n"
+    ],
+    "correctAnswer": "connection = sqlite3.connect(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()"
+  },
+  {
+    "question": "Which of these commands is a valid way to insert a row containing example_id and name into the table example?",
+    "answers": [
+      "INSERT INTO example(example_id, name)\nVALUES(1, 'example');",
+      "INSERT example(example_id, name)\n(1, 'example');",
+      "FROM example(example_id, name)\nINSERT VALUES(1, 'example');",
+      "INSERT INTO example()\nVALUES;",
+      "INTO example(example_id, name)\nINSERT VALUES(1, 'example');\n"
+    ],
+    "correctAnswer": "INSERT INTO example(example_id, name)\nVALUES(1, 'example');"
+  },
+  {
+    "question": "Which of these commands is a valid way to select example_id and name from the table example?",
+    "answers": [
+      "SELECT example_id, name\nFROM example;",
+      "FROM example\nSELECT example_id, name;",
+      "SELECT example\nFROM example_id, name;",
+      "GET example_id, name\nFROM example;\n"
+    ],
+    "correctAnswer": "SELECT example_id, name\nFROM example;"
+  },
+  {
+    "question": "Which of these commands is a valid way to select name from the table example where the age is less than 20?",
+    "answers": [
+      "SELECT name\nFROM example\nWHERE age < 20;",
+      "SELECT name\nFROM example\nSELECT age < 20;",
+      "SELECT example\nFROM name\nFROM age < 20;",
+      "GET name\nFROM example\nWHERE age < 20;\n"
+    ],
+    "correctAnswer": "SELECT name\nFROM example\nWHERE age < 20;"
+  },
+  {
+    "question": "Which of these commands is a valid way to select name from the table example where the age is between 10 and 30, ordered by name length from largest to smallest (hint, largest -> smallest is in descending or ascending order)?",
+    "answers": [
+      "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY length(name) DESC;",
+      "SELECT name\nFROM example\nORDER BY length(name) DESC;\nWHERE age BETWEEN 10 AND 30",
+      "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY length(name) ASC;",
+      "SELECT name\nFROM example\nORDER BY length(name) ASC;\nWHERE age INBETWEEN 10 AND 30",
+      "SELECT name\nFROM example\nWHERE age GREATER THAN 10 AND age LESS THAN 30\nORDER BY length(name) DESC;",
+      "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY name DESC;\n"
+    ],
+    "correctAnswer": "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY length(name) DESC;"
+  },
+  {
+    "question": "In Python's sqlite, is 0 considered \"falsy\"?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "Which of these commands would be valid?",
+    "answers": [
+      "SELECT example_id\nFROM example\nWHERE age < 10\nORDER BY age DESC;",
+      "SELECT example_id\nFROM example\nORDER BY age DESC\nWHERE age < 10;\n"
+    ],
+    "correctAnswer": "SELECT example_id\nFROM example\nWHERE age < 10\nORDER BY age DESC;"
+  },
+  {
+    "question": "Which of these commands is a valid way to update a person named Tommy's age to 15?",
+    "answers": [
+      "UPDATE person\nSET age = 15\nWHERE name = \"Tommy\";",
+      "UPDATE person\nSET age = 15\nWHERE name = Tommy;",
+      "SET person\nUPDATE age = 15\nWHERE name = Tommy;",
+      "UPDATE person\nWHERE name = Tommy\nTO age = 15;\n"
+    ],
+    "correctAnswer": "UPDATE person\nSET age = 15\nWHERE name = \"Tommy\";"
+  },
+  {
+    "question": "What would the following statement do?\nUPDATE person\nSET age = 0;",
+    "answers": [
+      "Set everyone's age to 0",
+      "Set nobody's age to 0",
+      "Produce an error",
+      "Rename the age attribute to 0\n"
+    ],
+    "correctAnswer": "Set everyone's age to 0"
+  },
+  {
+    "question": "Which of these commands is a valid way to delete a person named Tommy?",
+    "answers": [
+      "DELETE\nFROM person\nWHERE name = \"Tommy\"",
+      "DELETE name = \"Tommy\"\nFROM person",
+      "UPDATE person\nDELETE name = \"Tommy\"",
+      "UPDATE person\nDELETE name\nWHERE name = \"Tommy\"",
+      "UPDATE person\nSET name = \"Tommy\"\nDELETE\n"
+    ],
+    "correctAnswer": "DELETE\nFROM person\nWHERE name = \"Tommy\""
+  },
+  {
+    "question": "Which of these commands deletes a table?",
+    "answers": [
+      "DROP TABLE example;",
+      "DELETE TABLE example;",
+      "UPDATE example DELETE;",
+      "DROP example;"
+    ],
+    "correctAnswer": "DROP TABLE example;"
+  },
+  {
+    "question": "Which of these commands is a valid way to get all person_ids where a person's name doesn't exist?",
+    "answers": [
+      "SELECT person_id\nFROM person\nWHERE name is NULL;",
+      "SELECT person_id\nFROM person\nWHERE name = NULL;",
+      "SELECT person_id\nFROM person\nWHERE name is NONE;",
+      "SELECT person_id\nFROM person\nWHERE name = NONE;\n"
+    ],
+    "correctAnswer": "SELECT person_id\nFROM person\nWHERE name is NULL;"
+  },
+  {
+    "question": "Which of these commands is a valid way of create a person table where person_id is an integer, primary key, cannot be left empty (must exist)?",
+    "answers": [
+      "CREATE TABLE person(\n  person_id INTEGER NOT NULL PRIMARY KEY\n) STRICT;",
+      "CREATE TABLE person(\n  person_id PRIMARY KEY NOT NULL\n) STRICT;",
+      "CREATE TABLE person(\n  person_id INTEGER IS NOT NULL PRIMARY KEY\n) STRICT;",
+      "CREATE TABLE person(\n  person_id INTEGER NOT NONE KEY\n) STRICT;",
+      "CREATE TABLE person(\n  person_id NOT NULL PRIMARY KEY INTEGER\n) STRICT;\n"
+    ],
+    "correctAnswer": "CREATE TABLE person(\n  person_id INTEGER NOT NULL PRIMARY KEY\n) STRICT;"
+  },
+  {
+    "question": "Which of these commands is a valid way of create a money table where dollar must exist, is an integer, and must be greater than 0?",
+    "answers": [
+      "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK (dollar > 0)\n) STRICT;",
+      "CREATE TABLE money(\n  dollar INTEGER UNIQUE CHECK (dollar > 0)\n) STRICT;",
+      "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK VALUE > 0\n) STRICT;",
+      "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK dollar > 0\n) STRICT;",
+      "CREATE TABLE money(\n  dollar INTEGER NOT NULL IF (dollar > 0)\n) STRICT;\n"
+    ],
+    "correctAnswer": "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK (dollar > 0)\n) STRICT;"
+  },
+  {
+    "question": "Which of these commands is a valid way of create a person table where name is text, must be unique, cannot be left empty (must exist)?",
+    "answers": [
+      "CREATE TABLE person(\n  name TEXT UNIQUE NOT NULL\n) STRICT;",
+      "CREATE TABLE person(\n  name TEXT DIFFERENT NOT NULL\n) STRICT;",
+      "CREATE TABLE person(\n  name TEXT UNIQUE\n) STRICT;",
+      "CREATE TABLE person(\n  name NOT NULL UNIQUE TEXT\n) STRICT;\n"
+    ],
+    "correctAnswer": "CREATE TABLE person(\n  name TEXT UNIQUE NOT NULL\n) STRICT;"
+  },
+  {
+    "question": "If we want to rename a column to something easier to handle, how would we do it?",
+    "answers": [
+      "SELECT s.name\nFROM somethingverylong AS s;",
+      "SELECT s.name\nFROM somethingverylong RENAMED TO s;",
+      "SELECT s.name\nFROM somethingverylong IS s;",
+      "SELECT s.name\nFROM somethingverylong;\n"
+    ],
+    "correctAnswer": "SELECT s.name\nFROM somethingverylong AS s;"
+  },
+  {
+    "question": "If we wanted to create a foreign key that linked the current id to an id stored in a table called person, how would we do this?",
+    "answers": [
+      "FOREIGN KEY (id) REFERENCES person(id)",
+      "FORIEGN KEY (id) REFERENCES PRIMARY KEY person(id)",
+      "FORIEGN KEY (id) FROM person(id)",
+      "id REFERENCES person(id) FOREIGN KEY"
+    ],
+    "correctAnswer": "FOREIGN KEY (id) REFERENCES person(id)"
+  },
+  {
+    "question": "If I wanted to select a person's name from a person table whose favorite color is red, but favorite colors (a row named favorite) are stored in a table called favorite_color linked to the person table with a primary key of person_id, how would I do that?",
+    "answers": [
+      "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f ON p.person_id = f.person_id\nWHERE f.favorite = 'red';",
+      "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f WITH p ON p.person_id = f.person_id\nWHERE f.favorite = 'red';",
+      "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f WHERE p.person_id = f.person_id\nWHERE f.favorite = 'red';",
+      "SELECT FROM p.name\nWHERE f.favorite = 'red'\nINNER JOIN person AS p, favorite_color AS f;",
+      "SELECT p.name\nFROM person AS p\nJOIN favorite_color WITH f WHERE p.person_id = f.person_id\nWHERE f.favorite = 'red';\n"
+    ],
+    "correctAnswer": "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f ON p.person_id = f.person_id\nWHERE f.favorite = 'red';"
+  },
+  {
+    "question": "Which of these is a way to avoid an SQL injection attack?",
+    "answers": [
+      "connection.execute(\n  'INSERT INTO example(id) VALUES(?)',\n  ('hello')\n)",
+      "id = connection.clean(id)\nconnection.execute(\n  f'INSERT INTO example(id) VALUES({id})'\n)",
+      "connection.execute(\n  f'INSERT INTO example(id) VALUES({id})'\n)\n"
+    ],
+    "correctAnswer": "connection.execute(\n  'INSERT INTO example(id) VALUES(?)',\n  ('hello')\n)"
+  },
+  {
+    "question": "In order to make sure that our changes to our databases are saved, what command must we put at the end of every statement?",
+    "answers": [
+      "connection.commit()",
+      "connection.execute()",
+      "connection.submit()",
+      "connection.close()",
+      "connection.refresh()"
+    ],
+    "correctAnswer": "connection.commit()"
+  },
+  {
+    "question": "The comprehension [x for x in range(3)] generates...",
+    "answers": [
+      "[0, 1, 2, 3]",
+      "[1, 2, 3]",
+      "[0, 1, 2, 3, 4]",
+      "[1, 2, 3, 4]",
+      "[3]"
+    ],
+    "correctAnswer": "[0, 1, 2, 3]"
+  },
+  {
+    "question": "The comprehension [x for x in range(10) if x % 3 == 1] generates...",
+    "answers": [
+      "[1, 4, 7]",
+      "[1, 4, 7, 10]",
+      "[0, 3, 6, 9]",
+      "[1, 2, 3, 4]",
+      "[3]"
+    ],
+    "correctAnswer": "[1, 4, 7]"
+  },
+  {
+    "question": "Which comprehension is valid?",
+    "answers": [
+      "[x % 2 for x in range(2, 10)]",
+      "[x % 2 for x in 'Example']",
+      "[x for x in range(10) if x.lower() == 1]",
+      "[x for x in x from range(10)]"
+    ],
+    "correctAnswer": "[x % 2 for x in range(2, 10)]"
+  },
+  {
+    "question": "The comprehension [ [('A', y) if x % 2 == 0 else ('B', y) for x in range(2)] for y in 'hi'] generates...",
+    "answers": [
+      "[ [('A', 'h'), ('B', 'h')], [('A', 'i'), ('B', 'i')] ]",
+      "[ [('A', 'h'), ('B', 'i')], [('A', 'h'), ('B', 'i')] ]",
+      "[ [('A', 'h'), ('A', 'i')], [('B', 'h'), ('B', 'i')] ]",
+      "[ [('A', 'h'), ('A', 'h')], [('B', 'i'), ('B', 'i')] ]"
+    ],
+    "correctAnswer": "[ [('A', 'h'), ('B', 'h')], [('A', 'i'), ('B', 'i')] ]"
+  },
+  {
+    "question": "Would the following run: {[x] for x in range(10)}",
+    "answers": [
+      "No, because [x] is unhashable",
+      "No, because [x] is hashable",
+      "Yes, because [x] is unhashable",
+      "Yes, because [x] is hashable"
+    ],
+    "correctAnswer": "No, because [x] is unhashable"
+  },
+  {
+    "question": "What is hashability?",
+    "answers": [
+      "If an object can be \"reduced to an essence\" to an almost randomized value",
+      "If an object is mutable, or in other words can be modified",
+      "If an object is immutable, or in other words cannot be modified",
+      "If an object does not have the __hash__ or __eq__ dunders"
+    ],
+    "correctAnswer": "If an object can be \"reduced to an essence\" to an almost randomized value"
+  },
+  {
+    "question": "The comprehension {x: list(range(x)) for x in range(3)} generates...",
+    "answers": [
+      "{0: [], 1: [0], 2: [0, 1]}",
+      "{0: [], 1: [0], 2: [0, 1], 3: [0, 1, 2]}",
+      "{0: [0], 1: [0, 1], 2: [0, 1, 2]}",
+      "An error because it has unhashable elements"
+    ],
+    "correctAnswer": "{0: [], 1: [0], 2: [0, 1]}"
+  },
+  {
+    "question": "The closest-fit big O-notation of a list comprehension's time complexity would be...",
+    "answers": ["n", "1", "n^2", "log n", "n^3"],
+    "correctAnswer": "n"
+  },
+  {
+    "question": "Ranges store which four things:",
+    "answers": [
+      "start, stop, step, last",
+      "length, method, function, last",
+      "start, length, step, last",
+      "generate, iterate, stop, continue"
+    ],
+    "correctAnswer": "start, stop, step, last"
+  },
+  {
+    "question": "List indexing works by...",
+    "answers": [
+      "adding to the current address the size of the reference * n",
+      "subtracting from the last address the size of the reference * n",
+      "multiplying the current address by the size of the reference * n"
+    ],
+    "correctAnswer": "adding to the current address the size of the reference * n"
+  },
+  {
+    "question": "Which of the following is not iterable?",
+    "answers": ["int", "str", "list", "set", "dict"],
+    "correctAnswer": "int"
+  },
+  {
+    "question": "What is the main difference between an interable and an iterator?",
+    "answers": [
+      "iterable can be iterated, but the iterator knows where is our current value, and what have seen before and might see next",
+      "iterator can be iterated, but the iterable knows where is our current value, and what have seen before and might see next",
+      "they're practically the same, with no real differences",
+      "iterable has __next__ but iterator does not"
+    ],
+    "correctAnswer": "iterable can be iterated, but the iterator knows where is our current value, and what have seen before and might see next"
+  },
+  {
+    "question": "Why do we need to distinguish between iterable and iterator?",
+    "answers": [
+      "Because not every iterable needs to keep track of all its iterations",
+      "Because all iterations have constant big-O",
+      "Because not every iterator needs to keep track of where its current value is",
+      "Because Python decided that iterables should be more powerful"
+    ],
+    "correctAnswer": "Because not every iterable needs to keep track of all its iterations"
+  },
+  {
+    "question": "what does iter do?",
+    "answers": [
+      "returns an iterator",
+      "returns an iterable",
+      "returns an iteration",
+      "returns the object itself"
+    ],
+    "correctAnswer": "returns an iterator"
+  },
+  {
+    "question": "What does an iterator do when it reaches the end?",
+    "answers": [
+      "raises a StopIteration",
+      "raises a generic Exception",
+      "exits without failure",
+      "continues iterating"
+    ],
+    "correctAnswer": "raises a StopIteration"
+  },
+  {
+    "question": "What is included in the iterable protocol?",
+    "answers": ["only __iter__", "__iter__, __next__", "__init__"],
+    "correctAnswer": "only __iter__"
+  },
+  {
+    "question": "What is included in the iterator protocol?",
+    "answers": ["__iter__, __next__", "only __iter__", "__init__"],
+    "correctAnswer": "__iter__, __next__"
+  },
+  {
+    "question": "Which dunder gives the python shell an instruction to print?",
+    "answers": ["__repr__", "__iadd__", "__gt__", "__init__", "__iter__"],
+    "correctAnswer": "__repr__"
+  },
+  {
+    "question": "typically, __iter__ should return a _____",
+    "answers": ["iterator", "iterable", "the object itself"],
+    "correctAnswer": "iterator"
+  },
+  {
+    "question": "What is the protocol of following program?\ndef Class:\n  def __iter__(self):\n    return self\n\n  def __next(self):\n    return 1",
+    "answers": [
+      "iterator and iterable",
+      "only iterable",
+      "only iterator",
+      "context manager",
+      "none, because it supports no protocol\n"
+    ],
+    "correctAnswer": "iterator and iterable"
+  },
+  {
+    "question": "What do generators do?",
+    "answers": [
+      "does not calculate all results and returns one result at a time",
+      "calculates all results and returns one result at a time",
+      "calculates all results and returns all results",
+      "does not calculate all results but returns all results"
+    ],
+    "correctAnswer": "does not calculate all results and returns one result at a time"
+  },
+  {
+    "question": "Which keyword is included in all generators?",
+    "answers": ["yield", "return", "while", "do", "sequence", "iter"],
+    "correctAnswer": "yield"
+  },
+  {
+    "question": "if a generator wants to return not a generator, but all results from a previous generator, we use",
+    "answers": ["yield from", "yield", "yield with", "return"],
+    "correctAnswer": "yield from"
+  },
+  {
+    "question": "are generators iterators?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "What does this output?\ndef example():\n  for i in range(3):\n    yield i\n\nex = example()\nnext(ex)\nnext(ex)\nnext(ex)",
+    "answers": ["0\n1\n2", "1\n2\n3", "0\n1\n2\n3", "StopIteration\n"],
+    "correctAnswer": "0\n1\n2"
+  },
+  {
+    "question": "What does this output?\ndef example():\n  for i in range(2):\n    return 12\n    yield i\n\nex = example()\nnext(ex)\nnext(ex)",
+    "answers": [
+      "StopIteration",
+      "12\nStopIteration",
+      "12\n0\nStopIteration",
+      "0\n12\nStopIteration\n"
+    ],
+    "correctAnswer": "StopIteration"
+  },
+  {
+    "question": "What does this output?\ndef example():\n  yield 1\n  print(\"hi\")\n  yield 2\n\nex = example()\nnext(ex)",
+    "answers": ["1", "1\nhi\n2", "1\nhi", "StopIteration\n"],
+    "correctAnswer": "1"
+  },
+  {
+    "question": "What does this output?\nclass Example:\n  def __init__(self, start):\n    self._start = start\n\n  def __iter__(self):\n    return self\n\n  def __next__(self):\n    result = self._start\n    self._start += 1\n    if(result < 5):\n      return result\n    else:\n      raise StopIteration\n\nex = Example(4)\nnext(ex)\nnext(ex)",
+    "answers": [
+      "4\nStopIteration",
+      "4\n5\nStopIteration",
+      "StopIteration",
+      "0\n1\n2\n3\n4\n5\nStopIteration\n"
+    ],
+    "correctAnswer": "4\nStopIteration"
+  },
+  {
+    "question": "What is the type of (x for x in range(3))?",
+    "answers": ["generator", "iterator", "tuple", "list"],
+    "correctAnswer": "generator"
+  },
+  {
+    "question": "What does this output?\ndef example():\n  start = 0\n  while True:\n    yield start\n    start += 1\n\ni = list(example())",
+    "answers": [
+      "It would never finish running",
+      "It would raise a StopIteration immediately",
+      "[0, 1, 2, 3, 4, 5]",
+      "It would run into RecursionError\n"
+    ],
+    "correctAnswer": "It would never finish running"
+  },
+  {
+    "question": "What does this output?\ndef example(a, b):\n  yield from a\n  yield from b\n\nex = example([1,2,3], list(range(2)))\nfor i in ex:\n  print(i)",
+    "answers": [
+      "1\n2\n3\n0\n1",
+      "0\n1\n1\n2\n3",
+      "1\n2\n3",
+      "0\n1",
+      "StopIteration",
+      "ValueError\n"
+    ],
+    "correctAnswer": "1\n2\n3\n0\n1"
+  },
+  {
+    "question": "What does this output?\ndef example(a, b, c):\n  yield next(c)\n  yield from a\n  yield next(b)\n  yield next(c)\n\nex = example({1,2}, iter((1,2)), (x for x in range(10,0,-4)))\nprint(list(ex))",
+    "answers": [
+      "[10, 1, 2, 1, 6]",
+      "[0, 1, 2, 1, 4]",
+      "[1, 2, 1, 2, 10, 6, 2]",
+      "[10, 1, 2, 1, 2, 6]",
+      "StopIteration",
+      "ValueError\n"
+    ],
+    "correctAnswer": "[10, 1, 2, 1, 6]"
+  },
+  {
+    "question": "If a class does not have a __bool__ but has a __len__ that always returns 1, it will always evaluate to",
+    "answers": ["True", "False"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "What does this output?\nclass Example:\n  def __init__(self, value):\n    self._value = value\n\n  def __len__(self):\n    return self._value + 1\n\n  def __bool__(self):\n    return self._value % 2 == 0\n\nex = Example(0)\nex1 = Example(1)\nprint(len(ex) + len(ex1))\nif ex and ex1:\n  print(\"Hello!\")",
+    "answers": ["3", "3\nHello!", "1", "1\nHello", "ValueError\n"],
+    "correctAnswer": "3"
+  },
+  {
+    "question": "The sequence protocol requires _____ and _____, objects with this protocol are automatically _____",
+    "answers": [
+      "__len__, __getitem__, iterable",
+      "__len__, __setitem__, iterable",
+      "__getitem__, __setitem__, mutable",
+      "__getitem__, __setitem__, immutable"
+    ],
+    "correctAnswer": "__len__, __getitem__, iterable"
+  },
+  {
+    "question": "What does this output?\nclass Example:\n  def __getitem__(self, index):\n    if index < 0:\n      return \"not valid\"\n    if index == 0:\n      return 0\n    if index > 0:\n      return index * 2\n\nex = Example()\nprint(ex[-10], ex[0], ex[10])",
+    "answers": [
+      "not valid 0 20",
+      "not valid 0 10",
+      "-10 0 20",
+      "-10 0 10",
+      "ValueError\n"
+    ],
+    "correctAnswer": "not valid 0 20"
+  },
+  {
+    "question": "If a class called Example has the dunders __getitem__,  __reversed__ and __contains__, which of the following would be legal?",
+    "answers": [
+      "ex = Example\nprint(reversed(ex)[0], 'A' in ex)",
+      "ex = Example\nex[0] = 'A'\nprint('A' in ex)",
+      "ex = Example\nprint(reversed(ex)[0], 'A' in ex, len(ex))",
+      "ex = Example\nprint(reversed(ex)[0], 'A' in ex, len(reversed(ex)))\n"
+    ],
+    "correctAnswer": "ex = Example\nprint(reversed(ex)[0], 'A' in ex)"
+  },
+  {
+    "question": "In slicing notation, list[a:b:c] means...",
+    "answers": [
+      "a is start, b is stop, c is step",
+      "a is step, b is start, c is stop",
+      "a is stop, b is start, c is step",
+      "a is start, b is start, c is an alternate start"
+    ],
+    "correctAnswer": "a is start, b is stop, c is step"
+  },
+  {
+    "question": "When we perform slicing, the _____ method is called and the _____ object is passed in as a parameter",
+    "answers": [
+      "__getitem__, slice",
+      "__setitem__, slice",
+      "__delitem__, slice",
+      "__getitem__, index",
+      "__setitem__, index"
+    ],
+    "correctAnswer": "__getitem__, slice"
+  },
+  {
+    "question": "What would the following output?\ns = slice(1,10,2)\ns1 = slice(None, None, None)\nprint(s.indices(5))\nprint(s1.indices(3))",
+    "answers": [
+      "(0, 5, 2)\n(0, 3, 1)",
+      "(0, 5, 2)\n(None, None, None)",
+      "(0, 4, 2)\n(0, 3, 1)",
+      "(0, 4, 2)\n(None, None, None)\n"
+    ],
+    "correctAnswer": "(0, 5, 2)\n(0, 3, 1)"
+  },
+  {
+    "question": "Hashable objects are required to be _____",
+    "answers": [
+      "immutable",
+      "mutable",
+      "integers",
+      "strings",
+      "no requirements"
+    ],
+    "correctAnswer": "immutable"
+  },
+  {
+    "question": "What would the following print?\nclass Example:\n  def __hash__(self):\n    return hash(())\n\nex = Example()\nprint(hash(ex))",
+    "answers": [
+      "Cannot determine",
+      "-355005847583947917",
+      "994765038475654834",
+      "TypeError\n"
+    ],
+    "correctAnswer": "Cannot determine"
+  },
+  {
+    "question": "a is b is analagous to...",
+    "answers": [
+      "id(a) == id(b)",
+      "hash(a) == hash(b)",
+      "a == b",
+      "a >= b",
+      "a <> b"
+    ],
+    "correctAnswer": "id(a) == id(b)"
+  },
+  {
+    "question": "Which three dunders do we need in order to satisfy all comparisons?",
+    "answers": [
+      "__eq__, __lt__, __lte__",
+      "__ne__, __gt__, __gte__",
+      "__eq__, __lt__, __gt__",
+      "__ne__, __gt__, __lte__"
+    ],
+    "correctAnswer": "__eq__, __lt__, __lte__"
+  },
+  {
+    "question": "__eq__ takes in _____ and _____ as paramaters?",
+    "answers": [
+      "self, other",
+      "self, index",
+      "self, name",
+      "it only takes in self"
+    ],
+    "correctAnswer": "self, other"
+  },
+  {
+    "question": "Which of the following is true?",
+    "answers": [
+      "If two objects are equivalent, they must have the same hash",
+      "If two objects have the same hash, they must be equivalent",
+      "If two objects are not equivalent, they must have the same hash",
+      "If two objects have different hashes, they must still be equivalent"
+    ],
+    "correctAnswer": "If two objects are equivalent, they must have the same hash"
+  },
+  {
+    "question": "If we provide an __eq__ without providing a __hash__, what does Python do?",
+    "answers": [
+      "__hash__ is set to None",
+      "__hash__ is set to __eq__",
+      "it does nothing",
+      "__hash__ is set to __ne__"
+    ],
+    "correctAnswer": "__hash__ is set to None"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def __eq__(self, other):\n    return True\n\nclass B:\n  def __eq__(self, other):\n    return False\n\na = A()\nb = B()\nprint(a == b)\nprint(b == a)",
+    "answers": ["True\nFalse", "False\nTrue", "True\nTrue", "False\nFalse\n"],
+    "correctAnswer": "True\nFalse"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def __len__(self):\n    return 0\n\nclass B:\n  def __eq__(self, other):\n    return len(other) == 0\n\na = A()\nb = B()\nprint(a == b)\nprint(b == a)",
+    "answers": ["True\nTrue", "False\nTrue", "True\nFalse", "False\nFalse\n"],
+    "correctAnswer": "True\nTrue"
+  },
+  {
+    "question": "if the operand + is not supported between two different types, which should __add__ return?",
+    "answers": [
+      "NotImplemented",
+      "Implemented",
+      "StopIteration",
+      "ValueError",
+      "TypeError",
+      "Exception"
+    ],
+    "correctAnswer": "NotImplemented"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint(1 + a)",
+    "answers": ["TypeError", "2", "1", "NotImplemented\n"],
+    "correctAnswer": "TypeError"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint(1 + a)",
+    "answers": ["2", "TypeError", "1", "NotImplemented\n"],
+    "correctAnswer": "2"
+  },
+  {
+    "question": "Which of the following operations would be illegal on this class?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\n  def __iadd__(self, other):\n    self._value = self._value + other\n    return self\n\na = A(1)",
+    "answers": [
+      "None of these",
+      "a += 1",
+      "1 + a",
+      "a + 1",
+      "a + 1.2",
+      "1.2 + a\n"
+    ],
+    "correctAnswer": "None of these"
+  },
+  {
+    "question": "Which operation does __itruediv__ allow?",
+    "answers": ["a /= 1", "a += 1", "a //= 1", "a / a", "1 / a"],
+    "correctAnswer": "a /= 1"
+  },
+  {
+    "question": "Which operation does __rsub__ allow?",
+    "answers": ["1 - a", "a - 1", "a -= 1", "1 -= a", "-a"],
+    "correctAnswer": "1 - a"
+  },
+  {
+    "question": "When do we want to use inheritance?",
+    "answers": [
+      "When we want X class to be just like Y except for some very minor changes",
+      "When we want X class to be different from Y",
+      "When we want X class to have the same methods but different paramaters as Y",
+      "When we want X class to be exactly the same as Y, so we can essentially call X multiple times"
+    ],
+    "correctAnswer": "When we want X class to be just like Y except for some very minor changes"
+  },
+  {
+    "question": "Which class do all Python classes inherit from?",
+    "answers": ["class", "object", "method", "function", "relation", "python"],
+    "correctAnswer": "class"
+  },
+  {
+    "question": "if Y inherits X, Y is the _____ class and X is the _____ class",
+    "answers": [
+      "derived, base",
+      "base, derived",
+      "basic, derivative",
+      "derivative, basic"
+    ],
+    "correctAnswer": "derived, base"
+  },
+  {
+    "question": "What is the following?\nclass A:\n  pass\n\nclass B(A):\n  pass",
+    "answers": [
+      "single inheritance",
+      "multiple inheritance",
+      "hierarchy inheritance",
+      "object inheritance\n"
+    ],
+    "correctAnswer": "single inheritance"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  pass\n\nclass B(A):\n  pass\n\nprint(A.__eq__ is B.__eq__)",
+    "answers": ["True", "False", "AttributeError", "TypeError\n"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  pass\n\nclass B(A):\n  pass\n\na = A()\nb = B()\nprint(type(b) is A)\nprint(isinstance(b, A))",
+    "answers": ["False\nTrue", "True\nFalse", "False\nFalse", "True\nTrue\n"],
+    "correctAnswer": "False\nTrue"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  pass\n\na = A()\nprint(isinstance(a, object))",
+    "answers": ["True", "False", "Exception\n"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  HI = \"hi!\"\n  def value(self):\n    return 10\n\nclass B(A):\n  HELLO = \"hello!\"\n  def value(self):\n    return 25\n\nb = B()\nprint(b.value())\nprint(b.HELLO)\nprint(b.HI)",
+    "answers": [
+      "25\nhello!\nhi!",
+      "11\nhello!\nhi!",
+      "25\nhello!\nAttributeError",
+      "11\nAttributeError",
+      "25\nAttributeError\n"
+    ],
+    "correctAnswer": "25\nhello!\nhi!"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def value(self):\n    return 10\n\nclass B(A):\n  def value(self):\n    return super().value() * 10\n\nb = B()\nprint(b.value())",
+    "answers": ["100", "10", "TypeError", "1000\n"],
+    "correctAnswer": "100"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def value(self):\n    return 10\n\nclass B():\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  def unique(self):\n    return 5\n\nc = C()\nd = D()\nprint(c.value())\nprint(d.value())",
+    "answers": ["5\n10", "10\n5", "10\n10", "5\n5", "TypeError\n"],
+    "correctAnswer": "5\n10"
+  },
+  {
+    "question": "What does the following output?\nclass Z:\n  def value(self)\n    return \"z\"\n\nclass A(Z):\n  def value(self):\n    return super().value()\n\nclass B(Z):\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nc = C()\nd = D()\nprint(c.value())\nprint(d.value())",
+    "answers": ["5\n5", "10\n5", "10\nz", "5\n10", "TypeError", "5\nz\n"],
+    "correctAnswer": "5\n5"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def value(self):\n    return super().value()\n\nclass B:\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nclass E(C, D):\n  pass\n\ne = E()\nprint(e.value())",
+    "answers": ["TypeError", "10", "5", "10\n5\n"],
+    "correctAnswer": "TypeError"
+  },
+  {
+    "question": "What does the following output?\nclass A:\n  def value(self):\n    return super().value()\n\nclass B:\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nprint(D.__mro__)\nprint(C.__mro__)",
+    "answers": [
+      "(<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)",
+      "(<class '__main__.D'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)",
+      "(<class '__main__.A'>, <class '__main__.B'>, <class '__main__.D'>, <class 'object'>)\n(<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>)",
+      "(<class 'object'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.D'>)\n(<class 'object'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>)\n"
+    ],
+    "correctAnswer": "(<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)"
+  }
+]

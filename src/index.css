@@ -1,0 +1,19 @@
+:root {
+  --background-color: linear-gradient(
+    to right top,
+    rgba(11, 0, 71, 1) 0%,
+    rgba(71, 9, 121, 1) 27%,
+    rgba(99, 0, 126, 1) 65%,
+    rgba(74, 0, 72, 1) 100%
+  );
+}
+
+body {
+  background-image: var(--background-color);
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(248, 248, 248)
+}

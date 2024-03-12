@@ -94,9 +94,9 @@ function MultipleChoice() {
     return <Outlet context={[correctness, mcqs, setIsResult, initialize]} />;
   }
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Link to="..">
-        <button>Back</button>
+        <button>Back to MCQ</button>
       </Link>
       <div>
         {time != "unlimited"
@@ -105,35 +105,52 @@ function MultipleChoice() {
             : `${Math.floor(curTime / 60)}:${curTime % 60}`
           : ""}
       </div>
-      <button onClick={handleBackQuestion}>&larr;</button>
-      {mcqs.length > 0 ? (
-        <McqQuestion
-          index={currentQuestion + 1}
-          result={null}
-          question={mcqs[currentQuestion].question}
-          answers={mcqs[currentQuestion].answers}
-          correct={mcqs[currentQuestion].correctAnswer}
-          correctness={correctness}
-          setCorrectness={setCorrectness}
-        />
-      ) : null}
-      <button onClick={handleForwardQuestion}>&rarr;</button>
-      {currentQuestion == mcqs.length - 1 ? (
-        <Link to="results">
-          <button
-            id="submitButton"
-            onClick={() => {
-              setIsResult(true);
-              setIntervalId((intervalId) => {
-                clearInterval(intervalId);
-                return intervalId;
-              });
-            }}
-          >
-            Submit
-          </button>
-        </Link>
-      ) : null}
+      <div className={styles.mainWrapper}>
+        <button onClick={handleBackQuestion} className={styles.leftArrow}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+          </svg>
+        </button>
+        <div className={styles.mcqQuestion}>
+          <div className={styles.mcqWrapper}>
+            {mcqs.length > 0 ? (
+              <McqQuestion
+                index={currentQuestion + 1}
+                result={null}
+                question={mcqs[currentQuestion].question}
+                answers={mcqs[currentQuestion].answers}
+                correct={mcqs[currentQuestion].correctAnswer}
+                correctness={correctness}
+                setCorrectness={setCorrectness}
+              />
+            ) : null}
+          </div>
+        </div>
+        <button onClick={handleForwardQuestion} className={styles.rightArrow}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
+        </button>
+      </div>
+      <Link to="results">
+        <button
+          className={
+            currentQuestion < mcqs.length - 1
+              ? `${styles.submitButton} ${styles.invisible}`
+              : styles.submitButton
+          }
+          id="submitButton"
+          onClick={() => {
+            setIsResult(true);
+            setIntervalId((intervalId) => {
+              clearInterval(intervalId);
+              return intervalId;
+            });
+          }}
+        >
+          Submit
+        </button>
+      </Link>
     </div>
   );
 }

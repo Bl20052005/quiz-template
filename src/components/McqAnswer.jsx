@@ -75,7 +75,6 @@ function McqAnswer({
         }
         key={ans}
         onClick={() => handleOnClick(i, ans)}
-        // data-answer={ans == correct}
       >
         {ans.split("\n").map((line, i) => {
           return <pre key={i}>{line}</pre>;

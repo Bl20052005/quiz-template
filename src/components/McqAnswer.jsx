@@ -37,7 +37,15 @@ function McqAnswer({
     return (
       <div className={styles.wrapper}>
         <div className={styles.option}>
-          <div>
+          <div
+            className={
+              correct
+                ? `${styles.choice} ${styles.correctChoice}`
+                : result[1] == -1
+                ? `${styles.choice} ${styles.noChoice}`
+                : `${styles.choice} ${styles.incorrectChoice}`
+            }
+          >
             {correct
               ? "Correct!"
               : result[1] == -1

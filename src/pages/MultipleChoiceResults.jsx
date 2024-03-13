@@ -1,6 +1,6 @@
 import { Link, useOutletContext } from "react-router-dom";
 import McqQuestion from "../components/McqQuestion";
-import styles from './MultipleChoiceResults.module.css'
+import styles from "./MultipleChoiceResults.module.css";
 
 function MutipleChoiceResults() {
   const [correctness, mcqs, setIsResult, initialize] = useOutletContext();
@@ -26,12 +26,27 @@ function MutipleChoiceResults() {
           />
         );
       })}
-      <div>
+      <div className={styles.score}>
         Score: {score} / {mcqs.length} (
         {Math.round((score / mcqs.length) * 100)}%)
       </div>
+      <div className={styles.scoreCommentary}>
+        {(score / mcqs.length) * 100 == 100
+          ? "Amazing! Perfect Score❣️❣️"
+          : (score / mcqs.length) * 100 > 90
+          ? "Wonderful score!"
+          : (score / mcqs.length) * 100 > 70
+          ? "Pretty good score!"
+          : (score / mcqs.length) * 100 > 50
+          ? "Keep on trying, you got this!"
+          : (score / mcqs.length) * 100 > 20
+          ? "We may need some work, but I know we can do it!"
+          : "Bit of review can't hurt, can it? :)"}
+      </div>
       <Link to="..">
-        <button onClick={handleReset}>Try Again?</button>
+        <button className={styles.resetButton} onClick={handleReset}>
+          Try Again?
+        </button>
       </Link>
     </div>
   );

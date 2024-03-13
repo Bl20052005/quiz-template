@@ -15,7 +15,6 @@ function MultipleChoice() {
   const [intervalId, setIntervalId] = useState(0);
   const [curTime, setCurTime] = useState("unlimited");
   const { qs, time } = useParams();
-  console.log(qs, time);
 
   function shuffle(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -91,7 +90,6 @@ function MultipleChoice() {
   }
 
   if (isResult) {
-    console.log(isResult);
     return <Outlet context={[correctness, mcqs, setIsResult, initialize]} />;
   }
   return (
@@ -147,7 +145,7 @@ function MultipleChoice() {
               : styles.submitButton
           }
           id="submitButton"
-          tabindex="-1"
+          tabIndex="-1"
           onClick={() => {
             setIsResult(true);
             setIntervalId((intervalId) => {

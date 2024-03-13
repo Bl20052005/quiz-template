@@ -10,17 +10,15 @@ function McqQuestion({
   result,
   correctness,
 }) {
-  //   const correctness = useRef(Array.from({ length: 10 }, () => false));
-  console.log(correctness);
   return (
-    <div className={styles.wrapper}>
-      <div>
+    <div className={result ? styles.resultWrapper : styles.wrapper}>
+      <div className={result ? styles.resultQuestion : styles.question}>
         Question {index}:{" "}
         {question.split("\n").map((line, i) => {
-          return <pre key={i}>{line}</pre>;
+          return <pre className={styles.questionLine} key={i}>{line}</pre>;
         })}
       </div>
-      <div className={styles.answers}>
+      <div className={result ? styles.resultAnswers : styles.answers}>
         <McqAnswer
           result={result}
           questionIndex={index - 1}

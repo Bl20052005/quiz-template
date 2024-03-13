@@ -1,6 +1,7 @@
 import { Link, useOutletContext } from "react-router-dom";
 import McqQuestion from "../components/McqQuestion";
 import styles from "./MultipleChoiceResults.module.css";
+import ChangeButton from "../components/ChangeButton";
 
 function MutipleChoiceResults() {
   const [correctness, mcqs, setIsResult, initialize] = useOutletContext();
@@ -43,11 +44,14 @@ function MutipleChoiceResults() {
           ? "We may need some work, but I know we can do it!"
           : "Bit of review can't hurt, can it? :)"}
       </div>
-      <Link to="..">
-        <button className={styles.resetButton} onClick={handleReset}>
-          Try Again?
-        </button>
-      </Link>
+      <div className={styles.buttons}>
+        <Link to="..">
+          <button className={styles.resetButton} onClick={handleReset}>
+            Try Again?
+          </button>
+        </Link>
+        <ChangeButton to="../.." text="Back to MCQ" />
+      </div>
     </div>
   );
 }

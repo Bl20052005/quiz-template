@@ -1180,12 +1180,12 @@
   {
     "question": "If a class called Example has the dunders __getitem__,  __reversed__ and __contains__, which of the following would be legal?",
     "answers": [
-      "ex = Example\nprint(reversed(ex)[0], 'A' in ex)",
-      "ex = Example\nex[0] = 'A'\nprint('A' in ex)",
-      "ex = Example\nprint(reversed(ex)[0], 'A' in ex, len(ex))",
-      "ex = Example\nprint(reversed(ex)[0], 'A' in ex, len(reversed(ex)))\n"
+      "ex = Example()\nprint(reversed(ex)[0], 'A' in ex)",
+      "ex = Example()\nex[0] = 'A'\nprint('A' in ex)",
+      "ex = Example()\nprint(reversed(ex)[0], 'A' in ex, len(ex))",
+      "ex = Example()\nprint(reversed(ex)[0], 'A' in ex, len(reversed(ex)))\n"
     ],
-    "correctAnswer": "ex = Example\nprint(reversed(ex)[0], 'A' in ex)"
+    "correctAnswer": "ex = Example()\nprint(reversed(ex)[0], 'A' in ex)"
   },
   {
     "question": "In slicing notation, list[a:b:c] means...",
@@ -1842,7 +1842,7 @@
       "0\n1\n1\n1",
       "1\n1\n1\n2",
       "2\n1\n1\n1",
-      "0\n1\n1\n1",
+      "0\n1\n1\n0",
       "1\n2\n3\n4\n"
     ],
     "correctAnswer": "0\n1\n1\n1"

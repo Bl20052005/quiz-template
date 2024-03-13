@@ -1,5 +1,6 @@
 import { Link, useOutletContext } from "react-router-dom";
 import McqQuestion from "../components/McqQuestion";
+import styles from './MultipleChoiceResults.module.css'
 
 function MutipleChoiceResults() {
   const [correctness, mcqs, setIsResult, initialize] = useOutletContext();
@@ -11,7 +12,7 @@ function MutipleChoiceResults() {
   }
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       {mcqs.map((question, i) => {
         return (
           <McqQuestion

@@ -13,7 +13,7 @@ function McqQuestion({
   //   const correctness = useRef(Array.from({ length: 10 }, () => false));
   console.log(correctness);
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div>
         Question {index}:{" "}
         {question.split("\n").map((line, i) => {

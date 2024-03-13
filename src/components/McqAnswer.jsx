@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React } from "react";
 import styles from "./McqAnswer.module.css";
 function McqAnswer({
   answers,
@@ -35,33 +35,43 @@ function McqAnswer({
     }
     let correct = correctIndex == result[1];
     return (
-      <>
-        <div>
-          {correct ? "Correct!" : result[1] == -1 ? "No choice." : "Incorrect!"}
+      <div className={styles.wrapper}>
+        <div className={styles.option}>
+          <div>
+            {correct
+              ? "Correct!"
+              : result[1] == -1
+              ? "No choice."
+              : "Incorrect!"}
+          </div>
+          <div className={styles.answerContainer}>
+            {answers.map((ans, i) => {
+              return (
+                <div
+                  key={ans}
+                  className={
+                    ans == correctAnswer
+                      ? `${styles.correctAnswer} ${styles.answer}`
+                      : i == result[1]
+                      ? `${styles.incorrectAnswer} ${styles.answer}`
+                      : styles.answer
+                  }
+                >
+                  {ans.split("\n").map((line, i) => {
+                    return (
+                      <pre className={styles.answerLine} key={i}>
+                        {line}
+                      </pre>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
         </div>
-        {answers.map((ans, i) => {
-          return (
-            <div
-              key={ans}
-              className={
-                ans == correctAnswer
-                  ? `${styles.correctAnswer} ${styles.answer}`
-                  : i == result[1]
-                  ? `${styles.incorrectAnswer} ${styles.answer}`
-                  : styles.answer
-              }
-            >
-              {ans.split("\n").map((line, i) => {
-                return <pre key={i}>{line}</pre>;
-              })}
-            </div>
-          );
-        })}
-      </>
+      </div>
     );
   }
-
-  console.log("coooo", correctness[questionIndex][1]);
 
   return answers.map((ans, i) => {
     return (
@@ -77,7 +87,11 @@ function McqAnswer({
         onClick={() => handleOnClick(i, ans)}
       >
         {ans.split("\n").map((line, i) => {
-          return <pre key={i}>{line}</pre>;
+          return (
+            <pre className={styles.answerLine} key={i}>
+              {line}
+            </pre>
+          );
         })}
       </div>
     );

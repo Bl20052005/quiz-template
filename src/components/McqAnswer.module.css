@@ -6,10 +6,33 @@
   cursor: pointer;
 }
 
-.answers {
+.answerLine {
+  font-size: 16px;
+  text-wrap: wrap;
+}
+
+/* .answers {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.option {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+.answerContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .selected {
@@ -19,6 +42,7 @@
 
 .correctAnswer {
   border: 2px solid green;
+  background-color: rgba(0, 255, 98, 0.1);
 }
 
 .incorrectAnswer {

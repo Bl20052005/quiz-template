@@ -1,11 +1,15 @@
 .answer {
-    border: 2px solid white;
-    padding: 10px;
-    font-size: 15px;
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .answers {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.wrapper {
+  width: 100%;
 }

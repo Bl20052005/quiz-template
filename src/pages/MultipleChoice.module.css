@@ -17,6 +17,16 @@
   margin-top: 50px;
 }
 
+.timeDisplay {
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+}
+
+.warningTime {
+  color: rgb(255, 190, 190) !important;
+}
+
 .rightArrow,
 .leftArrow {
   display: flex;
@@ -43,6 +53,31 @@
   fill: rgb(151, 208, 255);
 }
 
+.backButton {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.backButton,
+.submitButton {
+  border: 2px solid white;
+  padding: 10px;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 20px;
+  color: rgb(243, 243, 243);
+  cursor: pointer;
+  transition: background-color 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+
+.backButton:hover,
+.submitButton:hover {
+  background-color: rgb(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 20px rgb(61, 61, 61);
+  transform: scale(1.01);
+}
+
 .mcqQuestion {
   width: 90%;
   height: 100%;
@@ -55,8 +90,9 @@
   max-height: 90%;
   overflow-y: auto;
   overflow-x: hidden;
+  min-width: 50%;
 }
 
 .invisible {
-  visibility: hidden;
+  display: none;
 }

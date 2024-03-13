@@ -3,7 +3,7 @@ import Main from "./pages/Main";
 import Python from "./pages/Python";
 import MultipleChoice from "./pages/MultipleChoice";
 import PythonNav from "./pages/PythonNav";
-import MutipleChoiceResults from "./pages/MutipleChoiceResults";
+import MutipleChoiceResults from "./pages/MultipleChoiceResults";
 import MultipleChoiceStart from "./pages/MultipleChoiceStart";
 
 function App() {

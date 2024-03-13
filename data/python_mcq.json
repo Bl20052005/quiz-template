@@ -327,7 +327,7 @@
     "correctAnswer": "x = False"
   },
   {
-    "question": "default arguments must go at the _____ of function paramaters?",
+    "question": "default arguments must go at the _____ of function parameters?",
     "answers": ["end", "beginning", "middle", "boundaries"],
     "correctAnswer": "end"
   },
@@ -1042,7 +1042,7 @@
     "correctAnswer": "iterator"
   },
   {
-    "question": "What is the protocol of following program?\ndef Class:\n  def __iter__(self):\n    return self\n\n  def __next(self):\n    return 1",
+    "question": "What is the protocol of following program?\ndef Class:\n  def __iter__(self):\n    return self\n\n  def __next__(self):\n    return 1",
     "answers": [
       "iterator and iterable",
       "only iterable",
@@ -1211,12 +1211,12 @@
   {
     "question": "What would the following output?\ns = slice(1,10,2)\ns1 = slice(None, None, None)\nprint(s.indices(5))\nprint(s1.indices(3))",
     "answers": [
-      "(0, 5, 2)\n(0, 3, 1)",
-      "(0, 5, 2)\n(None, None, None)",
-      "(0, 4, 2)\n(0, 3, 1)",
-      "(0, 4, 2)\n(None, None, None)\n"
+      "(1, 5, 2)\n(0, 3, 1)",
+      "(1, 5, 2)\n(None, None, None)",
+      "(1, 4, 2)\n(0, 3, 1)",
+      "(1, 4, 2)\n(None, None, None)\n"
     ],
-    "correctAnswer": "(0, 5, 2)\n(0, 3, 1)"
+    "correctAnswer": "(1, 5, 2)\n(0, 3, 1)"
   },
   {
     "question": "Hashable objects are required to be _____",
@@ -1261,7 +1261,7 @@
     "correctAnswer": "__eq__, __lt__, __lte__"
   },
   {
-    "question": "__eq__ takes in _____ and _____ as paramaters?",
+    "question": "__eq__ takes in _____ and _____ as parameters?",
     "answers": [
       "self, other",
       "self, index",
@@ -1354,7 +1354,7 @@
     "answers": [
       "When we want X class to be just like Y except for some very minor changes",
       "When we want X class to be different from Y",
-      "When we want X class to have the same methods but different paramaters as Y",
+      "When we want X class to have the same methods but different parameters as Y",
       "When we want X class to be exactly the same as Y, so we can essentially call X multiple times"
     ],
     "correctAnswer": "When we want X class to be just like Y except for some very minor changes"
@@ -1594,5 +1594,398 @@
       "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  \n  def memoize(n):\n    memo = {}\n    if n not in memo:\n      memo[n] = f(n-1) + f(n-2)\n    return memo[n]\n  \n  return memoize(n)\n"
     ],
     "correctAnswer": "def f(n):\n  final = [None] * max(n + 1, 2)\n  final[0] = 1\n  final[1] = 2\n\n  def f_memo(n):\n    if final[n] is not None:\n      return final[n]\n    else:\n      final[n] = f_memo(n-1) + f_memo(n-2)\n      return final[n]\n\n  return f_memo(n)"
+  },
+  {
+    "question": "What is dynamic programming (in reference to recursion)?",
+    "answers": [
+      "When we can get rid of our recursive call entirely since we can determine calculations without function calls",
+      "When we dynamically adjust the recursion depth based on the problem's complexity",
+      "When we can dynamically generate, during runtime based on the problem's input size, a recursive function",
+      "When we can adjust the order in which recursive subproblems are solved"
+    ],
+    "correctAnswer": "When we can get rid of our recursive call entirely since we can determine calculations without function calls"
+  },
+  {
+    "question": "What is functional programming?",
+    "answers": [
+      "the program is organized around pure, first-class functions",
+      "the program revolves around a single main function",
+      "the program has functional capabilities like OOP",
+      "the program functions normally, as opposed to raising an exception"
+    ],
+    "correctAnswer": "the program is organized around pure, first-class functions"
+  },
+  {
+    "question": "Why is pure functional programming impractical?",
+    "answers": [
+      "Because we will often need side effects",
+      "Because we will often need Object-oriented protocols",
+      "Because we can always produce first-class functions",
+      "Because pure functions are practical, but resource-intensive"
+    ],
+    "correctAnswer": "Because we will often need side effects"
+  },
+  {
+    "question": "Which is not a main benefit of functional programming?",
+    "answers": ["Inheritability", "Clarity", "Tesability", "Parallelizability"],
+    "correctAnswer": "Inheritability"
+  },
+  {
+    "question": "A lambda function called \"square\" can be written as:",
+    "answers": [
+      "lambda n: n * n",
+      "lambda: n * n",
+      "lambda n: return n * n",
+      "lambda n:\n  return n * n\n"
+    ],
+    "correctAnswer": "lambda n: n * n"
+  },
+  {
+    "question": "Which of the following lambda functions are valid?",
+    "answers": [
+      "lambda z, *x, **y: print(x, y, z)",
+      "lambda z, *x, **y: return (x, y, z)",
+      "lambda **y, *x: print(x, y)",
+      "lambda a, b, c: [for x in a with b]"
+    ],
+    "correctAnswer": "lambda z, *x, **y: print(x, y, z)"
+  },
+  {
+    "question": "What does the following output?\ndef x(val):\n  return val * 2\n\ndef y(f, v):\n  return f(v)\n\nprint(y(x, ':)'))",
+    "answers": [":):)", ":)", "Empty String", "):\n"],
+    "correctAnswer": ":):)"
+  },
+  {
+    "question": "the output is _____, and a is _____?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = y()()",
+    "answers": [
+      "No output, a function",
+      "hello, a function",
+      "hello, 100",
+      "No output, 100",
+      "An Exception is raised instead\n"
+    ],
+    "correctAnswer": "No output, a function"
+  },
+  {
+    "question": "the output is _____, and a is _____?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = z()",
+    "answers": [
+      "An exception is raised instead",
+      "No output, a function",
+      "hello, a function",
+      "hello, 100",
+      "No output, 100\n"
+    ],
+    "correctAnswer": "An exception is raised instead"
+  },
+  {
+    "question": "what does the following output?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = y()\nb = y()\nprint(a is b)",
+    "answers": [
+      "False",
+      "True",
+      "hello!\nhello!\nFalse",
+      "hello!\nhello!\nTrue\n"
+    ],
+    "correctAnswer": "False"
+  },
+  {
+    "question": "what does the following output?\ndef x(f):\n  def y(*args):\n    return not f(*args)\n  return y\n\nprint(x(lambda *args: len(args) > 0)(0))",
+    "answers": ["True", "False", "<function>", "None\n"],
+    "correctAnswer": "True"
+  },
+  {
+    "question": "What is a better name for the function x?\ndef x(f):\n  def y(*args, **kwargs):\n    return -1 / f(*args, **kwargs)\n  return y",
+    "answers": [
+      "create_inverse",
+      "create_factorial",
+      "none",
+      "all",
+      "create_mult",
+      "partial_call\n"
+    ],
+    "correctAnswer": "create_inverse"
+  },
+  {
+    "question": "What is a better name for the function x?\ndef x(f, *args):\n  def y(*new_args):\n    return f(*args, *new_args)\n  return y",
+    "answers": [
+      "partial_call",
+      "create_inverse",
+      "create_factorial",
+      "none",
+      "all",
+      "create_mult\n"
+    ],
+    "correctAnswer": "partial_call"
+  },
+  {
+    "question": "What does the following output?\nlist(map(lambda n: 2 * n, range(0,10,3)))",
+    "answers": [
+      "[0, 6, 12, 18]",
+      "[0, 1, 2, 3]",
+      "[0, 3, 6, 9]",
+      "[9, 6, 3, 0]",
+      "[]\n"
+    ],
+    "correctAnswer": "[0, 6, 12, 18]"
+  },
+  {
+    "question": "What does the following output?\nlist(filter(lambda n : n is None or n < 10, [1, 2, None, 10, 11, None]))",
+    "answers": [
+      "[1, 2, None, None]",
+      "[10, 11]",
+      "[1, 2]",
+      "[None, None]",
+      "[1, 2, None, 10, 11, None]",
+      "[10, 11, None, None]\n"
+    ],
+    "correctAnswer": "[1, 2, None, None]"
+  },
+  {
+    "question": "What does the following output?\nlist(map(lambda x: x * 10, filter(lambda n : n > 4, [1, 2, 3, 4, 5 ,6])))",
+    "answers": [
+      "[50, 60]",
+      "[10, 20, 30, 40]",
+      "[]",
+      "[5, 6]",
+      "[1, 2, 3, 4]",
+      "[10, 10, 10]",
+      "TypeError\n"
+    ],
+    "correctAnswer": "[50, 60]"
+  },
+  {
+    "question": "What does the following output?\n\nimport functools\nfunctools.reduce(lambda a, b: a + b, [1, 2, 3, 4, 5])",
+    "answers": ["15", "10", "14", "12", "9\n"],
+    "correctAnswer": "15"
+  },
+  {
+    "question": "What does the following output?\n\nimport functools\nfunctools.reduce(lambda a, b: a * b, [1, 2, 3, 4], 10)",
+    "answers": ["240", "60", "0", "10", "20\n"],
+    "correctAnswer": "240"
+  },
+  {
+    "question": "What does the following output?\n\nimport functools\nimport operator\nfunctools.reduce(operator.mul, [19, 18, 17, 0], 10)",
+    "answers": ["0", "58140", "190", "180\n"],
+    "correctAnswer": "0"
+  },
+  {
+    "question": "is int callable?",
+    "answers": ["No", "Yes"],
+    "correctAnswer": "No"
+  },
+  {
+    "question": "what makes an object callable?",
+    "answers": [
+      "__call__",
+      "__callable__",
+      "__calls__",
+      "__get__",
+      "__getattr__"
+    ],
+    "correctAnswer": "__call__"
+  },
+  {
+    "question": "decorators are prepended by what symbol?",
+    "answers": ["@", "#", "def", ":", "="],
+    "correctAnswer": "@"
+  },
+  {
+    "question": "What should decorators do?",
+    "answers": [
+      "accept an argument and return a function / class",
+      "accept a function / class and return an argument",
+      "accept strictly a function and return strictly a function",
+      "accept strictly a variable and return stricly a variable"
+    ],
+    "correctAnswer": "accept an argument and return a function / class"
+  },
+  {
+    "question": "What does the following output?\ndef x(f):\n  def returned_f(*args):\n    print('wowza')\n    f(10, *args)\n  return returned_f\n\n@x\ndef y(n, m):\n  print(n * m)\n\ny(10)",
+    "answers": ["wowza\n100", "wowza", "100", "AttributeError", "TypeError\n"],
+    "correctAnswer": "wowza\n100"
+  },
+  {
+    "question": "What does the following output?\ndef x(f):\n  def returned_f(*args):\n    print('wowza')\n    f(10, *args)\n  return returned_f\n\n@x\ndef y(*args):\n  print(list(map(lambda n: n * n, args)))\n\ny(1, 2, 3)",
+    "answers": [
+      "wowza\n[100, 1, 4, 9]",
+      "wowza\n[10, 1, 2, 3]",
+      "wowza",
+      "[100, 1, 4, 9]",
+      "TypeError\n"
+    ],
+    "correctAnswer": "wowza\n[100, 1, 4, 9]"
+  },
+  {
+    "question": "What does the following output?\ndef x(f):\n  def r():\n    print(\"a\")\n    return f()\n  return r\n\ndef y(f):\n  def r():\n    print(\"b\")\n    return f()\n  return r\n\n@x\n@x\n@y\ndef z():\n  print('z')\n\nz()",
+    "answers": [
+      "a\na\nb\nz",
+      "z\nb\na\na",
+      "z\na\nb\na",
+      "b\nb\na\nz",
+      "b\na\na\nz\n"
+    ],
+    "correctAnswer": "a\na\nb\nz"
+  },
+  {
+    "question": "What does the following output?\ndef x(num):\n  def dec(f):\n    def return_f(*args):\n      for i in range(num):\n        print('hello!')\n        f(*args)\n    return return_f\n  return dec\n\n@x(2)\ndef y(n):\n  print(n)\n\ny(10)",
+    "answers": [
+      "hello!\n10\nhello!\n10",
+      "hello!\n10",
+      "10\nhello!\nhello!\n10",
+      "hello!\nhello!",
+      "10\n10\n"
+    ],
+    "correctAnswer": "hello!\n10\nhello!\n10"
+  },
+  {
+    "question": "What does the following output?\ndef x(num):\n  def dec(f):\n    def return_f(*args):\n      for i in range(num):\n        print(i)\n        f(*args)\n    return return_f\n  return dec\n\n@x(2)\ndef y(n):\n  print(n)\n\ny(1)",
+    "answers": [
+      "0\n1\n1\n1",
+      "1\n1\n1\n2",
+      "2\n1\n1\n1",
+      "0\n1\n1\n1",
+      "1\n2\n3\n4\n"
+    ],
+    "correctAnswer": "0\n1\n1\n1"
+  },
+  {
+    "question": "What can't decorators do?",
+    "answers": [
+      "alter code in a function",
+      "append code to a function",
+      "prepend code to a function",
+      "replace a function"
+    ],
+    "correctAnswer": "alter code in a function"
+  },
+  {
+    "question": "What does the following output?\ndef x(f):\n  return 'Hello!'\n\n@x\n@x\ndef y():\n  print('Hello!')\n\ny()",
+    "answers": ["TypeError", "Hello!", "Hello!\nHello!", "None", "No output\n"],
+    "correctAnswer": "TypeError"
+  },
+  {
+    "question": "What does the following output?\nclass X:\n  def __init__(self, f):\n    self._f = f\n\n  def __call__(self, *args):\n    return self._f(*args, -1)\n\n@X\ndef y(n, m):\n  arr = [1, 2, 3, 4]\n  print(arr[n])\n  print(arr[m])\n\ny(-2)",
+    "answers": ["3\n4", "2\n1", "4\n3", "1\n2", "4\n3\n2\n1\n"],
+    "correctAnswer": "3\n4"
+  },
+  {
+    "question": "What does the following output?\nclass X:\n  def __init__(self, f):\n    self._f = f\n    self._val = 1\n\n  def __call__(self, *args):\n    self._val *= 2\n    return self._f(*args, -1)\n\n  def val_transformed(self):\n    return self._val * -1\n\n@X\ndef y(n, m):\n  print(n + m)\n\ny(-2)\ny(1)\nprint(y.val_transformed())",
+    "answers": ["-3\n0\n-4", "-3\n0\n3", "0\n0\n0", "3\n0\n-4", "-4\n0\n0\n"],
+    "correctAnswer": "-3\n0\n-4"
+  },
+  {
+    "question": "What does the following output?\ndef x(num_of):\n  def dec(c):\n    def __init__(self, n):\n      for i in range(n):\n        setattr(self, f\"_{i + num_of}\", i)\n\n    c.__init__ = __init__\n\n    return c\n\n  return dec\n\n@x(10)\nclass Y:\n    pass\n\ny = Y(10)\n\nprint(y._18)\nprint(y._10)\nprint(y._12)",
+    "answers": [
+      "8\n0\n2",
+      "18\n10\n12",
+      "28\n20\n22",
+      "0\n0\n0",
+      "AttributeError",
+      "10\n12\n18\n"
+    ],
+    "correctAnswer": "8\n0\n2"
+  },
+  {
+    "question": "What does the following output?\ndef x(num_of):\n  def dec(c):\n    def __init__(self, n):\n      for i in range(n):\n        setattr(self, \"A\"*i, i % 2)\n\n    c.__init__ = __init__\n\n    return c\n\n  return dec\n\n@x(10)\nclass Y:\n    pass\n\ny = Y(10)\n\nprint(y.AAAA)\nprint(y.A)\nprint(y.AAAAA)",
+    "answers": [
+      "0\n1\n1",
+      "1\n0\n0",
+      "1\n0\n1",
+      "0\n0\n0",
+      "AttributeError",
+      "AAAA\nA\nAAAAA\n"
+    ],
+    "correctAnswer": "0\n1\n1"
+  },
+  {
+    "question": "What is an attribute descriptor?",
+    "answers": [
+      "an object that can customize its own value",
+      "an object that supports __init__",
+      "an object that can customize others values",
+      "an object that, when accessed, produces different results depending on its parameters"
+    ],
+    "correctAnswer": "an object that can customize its own value"
+  },
+  {
+    "question": "Do all functions have a __get__?",
+    "answers": ["Yes", "No"],
+    "correctAnswer": "Yes"
+  },
+  {
+    "question": "What is passed into a __get__?",
+    "answers": [
+      "__get__(self, obj, objtype)",
+      "__get__(self, objtype, obj)",
+      "__get__(self, attr, attrlen)",
+      "__get__(self, attrlen, attr)"
+    ],
+    "correctAnswer": "__get__(self, obj, objtype)"
+  },
+  {
+    "question": "When is __get__ triggered?",
+    "answers": [
+      "When another object or class accesses whatever it is describing",
+      "When the attribute it is describing gets ran",
+      "When the attribute it is describing is deleted",
+      "When inside of another method, the attribute it is describing is called"
+    ],
+    "correctAnswer": "When another object or class accesses whatever it is describing"
+  },
+  {
+    "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class (attention to the self.)')\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
+    "answers": [
+      "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\ncalling the object that has __get__",
+      "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__",
+      "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__\nI ran",
+      "calling with class (attention to the self.)\ncalling the class that has __get__\ncalling the object that has __get__\n"
+    ],
+    "correctAnswer": "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\ncalling the object that has __get__"
+  },
+  {
+    "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
+    "answers": [
+      "calling with class\nI ran\ncalling the class that has __get__\ncalling the object that has __get__",
+      "calling with class\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__",
+      "calling with class\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__\nI ran",
+      "calling with class\ncalling the class that has __get__\ncalling the object that has __get__\n"
+    ],
+    "correctAnswer": "calling with class\nI ran\ncalling the class that has __get__\ncalling the object that has __get__"
+  },
+  {
+    "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return list(args)\n\nd = D()\nprint(d.value(20, 30))",
+    "answers": [
+      "[10, 20, 30]",
+      "[20, 30]",
+      "[20]",
+      "[]",
+      "[0, 10, 20, 30]",
+      "AttributeError\n"
+    ],
+    "correctAnswer": "[10, 20, 30]"
+  },
+  {
+    "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return list(args)\n\nd = D\nprint(d.value(20, 30))",
+    "answers": [
+      "[20, 30]",
+      "[10, 20, 30]",
+      "[20]",
+      "[]",
+      "[0, 10, 20, 30]",
+      "AttributeError\n"
+    ],
+    "correctAnswer": "[20, 30]"
+  },
+  {
+    "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return self\n\nd = D()\nprint(d.value(20, 30))",
+    "answers": [
+      "<D class>",
+      "<D object>",
+      "10",
+      "None",
+      "[10, 20, 30]",
+      "[20, 30]",
+      "AttributeError\n"
+    ],
+    "correctAnswer": "<D class>"
   }
 ]

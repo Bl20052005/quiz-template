@@ -65,7 +65,8 @@ function MultipleChoice() {
         return intervalId;
       });
       setIsResult(true);
-      document.getElementById("submitButton").click();
+      if (document.getElementById("submitButton"))
+        document.getElementById("submitButton").click();
     }
   }, [curTime]);
 
@@ -96,9 +97,15 @@ function MultipleChoice() {
   return (
     <div className={styles.wrapper}>
       <Link to="..">
-        <button>Back to MCQ</button>
+        <button className={styles.backButton}>&lt; Back to MCQ</button>
       </Link>
-      <div>
+      <div
+        className={
+          curTime < 60
+            ? `${styles.timeDisplay} ${styles.warningTime}`
+            : styles.timeDisplay
+        }
+      >
         {time != "unlimited"
           ? curTime % 60 < 10
             ? `${Math.floor(curTime / 60)}:0${curTime % 60}`
@@ -140,6 +147,7 @@ function MultipleChoice() {
               : styles.submitButton
           }
           id="submitButton"
+          tabindex="-1"
           onClick={() => {
             setIsResult(true);
             setIntervalId((intervalId) => {

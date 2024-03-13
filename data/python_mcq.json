@@ -81,7 +81,12 @@
   },
   {
     "question": "if locals() is called in a function, what would you expect it to return?",
-    "answers": ["All varaibles within the function"],
+    "answers": [
+      "All varaibles within the function",
+      "All variables not within the function",
+      "All variables in the scope of its parent",
+      "All variables residing within the base class of the function"
+    ],
     "correctAnswer": "All varaibles within the function"
   },
   {
@@ -883,13 +888,14 @@
   {
     "question": "The comprehension [x for x in range(3)] generates...",
     "answers": [
+      "[0, 1, 2]",
       "[0, 1, 2, 3]",
       "[1, 2, 3]",
       "[0, 1, 2, 3, 4]",
       "[1, 2, 3, 4]",
       "[3]"
     ],
-    "correctAnswer": "[0, 1, 2, 3]"
+    "correctAnswer": "[0, 1, 2]"
   },
   {
     "question": "The comprehension [x for x in range(10) if x % 3 == 1] generates...",

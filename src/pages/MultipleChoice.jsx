@@ -95,7 +95,7 @@ function MultipleChoice() {
   return (
     <div className={styles.wrapper}>
       <Link to="..">
-        <button className={styles.backButton}>&lt; Back to MCQ</button>
+        <button className={styles.backButton}>&lt; <span className={styles.backMcq}>Back to MCQ</span></button>
       </Link>
       <div
         className={
@@ -140,7 +140,7 @@ function MultipleChoice() {
       <Link to="results">
         <button
           className={
-            currentQuestion < mcqs.length - 1
+            currentQuestion < mcqs.length - 1 || mcqs.length == 0
               ? `${styles.submitButton} ${styles.invisible}`
               : styles.submitButton
           }

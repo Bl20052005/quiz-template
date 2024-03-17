@@ -1695,8 +1695,8 @@
   },
   {
     "question": "what does the following output?\ndef x(f):\n  def y(*args):\n    return not f(*args)\n  return y\n\nprint(x(lambda *args: len(args) > 0)(0))",
-    "answers": ["True", "False", "<function>", "None\n"],
-    "correctAnswer": "True"
+    "answers": ["False", "True", "<function>", "None\n"],
+    "correctAnswer": "False"
   },
   {
     "question": "What is a better name for the function x?\ndef x(f):\n  def y(*args, **kwargs):\n    return -1 / f(*args, **kwargs)\n  return y",

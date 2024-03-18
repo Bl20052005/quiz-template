@@ -1329,7 +1329,7 @@
     "correctAnswer": "TypeError"
   },
   {
-    "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint(1 + a)",
+    "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint((1 + a)._value)",
     "answers": ["2", "TypeError", "1", "NotImplemented\n"],
     "correctAnswer": "2"
   },
@@ -1948,7 +1948,7 @@
     "correctAnswer": "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\ncalling the object that has __get__"
   },
   {
-    "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
+    "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class')\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
     "answers": [
       "calling with class\nI ran\ncalling the class that has __get__\ncalling the object that has __get__",
       "calling with class\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__",

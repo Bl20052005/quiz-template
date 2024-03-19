@@ -1141,7 +1141,7 @@
     "correctAnswer": "1\n2\n3\n0\n1"
   },
   {
-    "question": "What does this output?\ndef example(a, b, c):\n  yield next(c)\n  yield from a\n  yield next(b)\n  yield next(c)\n\nex = example({1,2}, iter((1,2)), (x for x in range(10,0,-4)))\nprint(list(ex))",
+    "question": "What does this output?\ndef example(a, b, c):\n  yield next(c)\n  yield from a\n  yield next(b)\n  yield next(c)\n\nex = example(range(0,2), iter((1,2)), (x for x in range(10,0,-4)))\nprint(list(ex))",
     "answers": [
       "[10, 1, 2, 1, 6]",
       "[0, 1, 2, 1, 4]",
@@ -1368,7 +1368,7 @@
   {
     "question": "Which class do all Python classes inherit from?",
     "answers": ["class", "object", "method", "function", "relation", "python"],
-    "correctAnswer": "class"
+    "correctAnswer": "object"
   },
   {
     "question": "if Y inherits X, Y is the _____ class and X is the _____ class",

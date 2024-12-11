@@ -78,7 +78,7 @@ async function find_score_data() {
 
 // save_and_log();
 
-app.post("/questions", async (req, resp) => {
+app.post("/questions", async (req, resp, next) => {
   const body = JSON.parse(Object.keys(req.body)[0]);
   const data = await find_question_data();
   const score = await find_score_data();
@@ -105,9 +105,22 @@ app.post("/questions", async (req, resp) => {
   score.scores.push(body.score);
 
   await score.save();
+
+  next();
 });
 
-app.get("/data", async (req, res) => {
+app.get("/data", async (req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+
   const data = await find_question_data();
   let score = await find_score_data();
 
@@ -145,4 +158,6 @@ app.get("/data", async (req, res) => {
   stats["min_score"] = data.correct[min_index] / data.attempts[min_index];
 
   res.send(JSON.stringify(stats));
+
+  next();
 });

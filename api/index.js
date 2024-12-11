@@ -13,8 +13,8 @@ mongoose
   .then(() => {
     console.log("FINE");
   })
-  .catch(() => {
-    console.log("BAD");
+  .catch((err) => {
+    console.log("BAD", err);
   });
 
 console.log(mongodb_url);

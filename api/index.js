@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000;
 const mongodb_url = process.env.MONGODB_URL;
 
+app.use(cors());
+
 const mongoose = require("mongoose");
 mongoose
   .connect(`${mongodb_url}/33-data`)
@@ -25,12 +27,6 @@ app.use(
   })
 );
 app.use(bodyParser.text());
-
-let corsOptions = {
-  origin: "*",
-};
-
-app.use(cors(corsOptions));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 

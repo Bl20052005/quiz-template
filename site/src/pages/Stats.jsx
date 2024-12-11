@@ -10,7 +10,7 @@ function Stats() {
 
   async function get_data() {
     const submit_url = await import.meta.env.VITE_SITE_URL;
-    let data = await axios.get(`${submit_url}/data`);
+    let data = await axios.get(`https://ics33-quiz.vercel.app/data`);
     setCurData(data.data);
   }
 

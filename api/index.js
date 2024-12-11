@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 const mongodb_url = process.env.MONGODB_URL;
 
 app.use(cors());
+app.options("*", cors());
 
 const mongoose = require("mongoose");
 mongoose

@@ -5,6 +5,7 @@ import MultipleChoice from "./pages/MultipleChoice";
 import PythonNav from "./pages/PythonNav";
 import MutipleChoiceResults from "./pages/MultipleChoiceResults";
 import MultipleChoiceStart from "./pages/MultipleChoiceStart";
+import Stats from "./pages/Stats";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </Route>
           </Route>
         </Route>
+        <Route path="stats" element={<Stats />}></Route>
       </Routes>
     </BrowserRouter>
   );

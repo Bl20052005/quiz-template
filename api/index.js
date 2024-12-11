@@ -26,7 +26,11 @@ app.use(
 );
 app.use(bodyParser.text());
 
-app.use(cors());
+let corsOptions = {
+  origin: "*",
+};
+
+app.use(cors(corsOptions));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 

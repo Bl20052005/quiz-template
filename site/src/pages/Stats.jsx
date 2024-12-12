@@ -10,7 +10,8 @@ function Stats() {
 
   async function get_data() {
     const submit_url = await import.meta.env.VITE_SITE_URL;
-    let data = await axios.get(`https://ics33-quiz.vercel.app/data`);
+    let data = await fetch(`https://ics33-quiz.vercel.app`, {"mode": "cors"});
+    console.log(data)
     setCurData(data.data);
   }
 

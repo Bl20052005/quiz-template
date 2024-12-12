@@ -2,6 +2,7 @@ import { useState } from "react";
 import McqAnswer from "./McqAnswer";
 import styles from "./McqQuestion.module.css";
 function McqQuestion({
+  displayIndex,
   index,
   question,
   answers,
@@ -13,7 +14,7 @@ function McqQuestion({
   return (
     <div className={result ? styles.resultWrapper : styles.wrapper}>
       <div className={result ? styles.resultQuestion : styles.question}>
-        Question {index}:{" "}
+        Question {displayIndex}:{" "}
         {question.split("\n").map((line, i) => {
           return <pre className={styles.questionLine} key={i}>{line}</pre>;
         })}

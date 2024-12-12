@@ -26,3 +26,8 @@
   margin: 0;
   text-align: center;
 }
+
+.container {
+  display: flex;
+  gap: 50px;
+}

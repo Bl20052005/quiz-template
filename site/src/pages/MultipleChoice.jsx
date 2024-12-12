@@ -4,8 +4,12 @@ import python_mcq from "../../data/python_mcq.json";
 import McqQuestion from "../components/McqQuestion";
 import { useEffect, useState } from "react";
 import { Link, Outlet, useParams, redirect } from "react-router-dom";
+import axios from "axios";
+
+const submit_url = import.meta.env.VITE_SITE_URL;
 
 function MultipleChoice() {
+  console.log(submit_url);
   const [mcqs, setMcqs] = useState([]);
   const [correctness, setCorrectness] = useState(
     Array.from({ length: 10 }, () => [false, -1])
@@ -15,6 +19,21 @@ function MultipleChoice() {
   const [intervalId, setIntervalId] = useState(0);
   const [curTime, setCurTime] = useState("unlimited");
   const { qs, time } = useParams();
+
+  async function submission() {
+    const submit_url = await import.meta.env.VITE_SITE_URL;
+    console.log(submit_url);
+    console.log(correctness, mcqs);
+    let final = {};
+    for (let i = 0; i < correctness.length; i++) {
+      final[mcqs[i]["index"]] = correctness[i][0];
+    }
+    let res = {
+      score: correctness.reduce((prev, cur) => (cur[0] ? prev + 1 : prev), 0),
+      questions: final,
+    };
+    await axios.post(`${submit_url}/questions`, JSON.stringify(res));
+  }
 
   function shuffle(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -95,7 +114,9 @@ function MultipleChoice() {
   return (
     <div className={styles.wrapper}>
       <Link to="..">
-        <button className={styles.backButton}>&lt; <span className={styles.backMcq}>Back to MCQ</span></button>
+        <button className={styles.backButton}>
+          &lt; <span className={styles.backMcq}>Back to MCQ</span>
+        </button>
       </Link>
       <div
         className={
@@ -120,6 +141,7 @@ function MultipleChoice() {
           <div className={styles.mcqWrapper}>
             {mcqs.length > 0 ? (
               <McqQuestion
+                displayIndex={mcqs[currentQuestion].index}
                 index={currentQuestion + 1}
                 result={null}
                 question={mcqs[currentQuestion].question}
@@ -148,6 +170,7 @@ function MultipleChoice() {
           tabIndex="-1"
           onClick={() => {
             setIsResult(true);
+            submission();
             setIntervalId((intervalId) => {
               clearInterval(intervalId);
               return intervalId;

@@ -7,7 +7,8 @@
       "what str value something evaluates to",
       "what class value something evaluates to"
     ],
-    "correctAnswer": "what bool value something evaluates to"
+    "correctAnswer": "what bool value something evaluates to",
+    "index": 0
   },
   {
     "question": "What is dir()?",
@@ -17,7 +18,8 @@
       "it asks \"what can we do in all scopes?\"",
       "it asks \"what is going on in other scopes?\""
     ],
-    "correctAnswer": "it asks \"what's avaliable in this current scope?\""
+    "correctAnswer": "it asks \"what's avaliable in this current scope?\"",
+    "index": 1
   },
   {
     "question": "What is __builtins__?",
@@ -27,32 +29,38 @@
       "a dictionary in which is stored all user-defined attributes and default python objects / classes / methods",
       "a dictionary that only exists sometimes, not all the time"
     ],
-    "correctAnswer": "a dictionary in which is stored all default python objects / classes / methods"
+    "correctAnswer": "a dictionary in which is stored all default python objects / classes / methods",
+    "index": 2
   },
   {
     "question": "__builtins__['False'] is False would return?",
     "answers": ["True", "False"],
-    "correctAnswer": "True"
+    "correctAnswer": "True",
+    "index": 3
   },
   {
     "question": "can we modify values in __builtins__?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 4
   },
   {
     "question": "What can we do to __builtins__?",
     "answers": ["all of these", "Add", "Delete", "Replace"],
-    "correctAnswer": "all of these"
+    "correctAnswer": "all of these",
+    "index": 5
   },
   {
     "question": "would dir() change if we added a varaible called z?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 6
   },
   {
     "question": "would dir() change if we added a function (using def) called z?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 7
   },
   {
     "question": "How is def different from storing a function in a varaible yourself?",
@@ -61,7 +69,8 @@
       "def does not give functions names",
       "there is no difference"
     ],
-    "correctAnswer": "def gives the function an explicit name"
+    "correctAnswer": "def gives the function an explicit name",
+    "index": 8
   },
   {
     "question": "What is globals()?",
@@ -69,7 +78,8 @@
       "A dictionary of all globally accessible things within a module",
       "A dictionary of all local variables"
     ],
-    "correctAnswer": "A dictionary of all globally accessible things within a module"
+    "correctAnswer": "A dictionary of all globally accessible things within a module",
+    "index": 9
   },
   {
     "question": "What is locals()?",
@@ -77,7 +87,8 @@
       "A dictionary of all local variables",
       "A dictionary of all globally accessible things within a module"
     ],
-    "correctAnswer": "A dictionary of all local variables"
+    "correctAnswer": "A dictionary of all local variables",
+    "index": 10
   },
   {
     "question": "if locals() is called in a function, what would you expect it to return?",
@@ -87,7 +98,8 @@
       "All variables in the scope of its parent",
       "All variables residing within the base class of the function"
     ],
-    "correctAnswer": "All varaibles within the function"
+    "correctAnswer": "All varaibles within the function",
+    "index": 11
   },
   {
     "question": "what is the LEGB rule?",
@@ -97,12 +109,14 @@
       "List, Errors, Global, Bool",
       "Misspelling of lego :)"
     ],
-    "correctAnswer": "Local, Enclosing, Global, Built-in"
+    "correctAnswer": "Local, Enclosing, Global, Built-in",
+    "index": 12
   },
   {
     "question": "What does the LEGB rule refer to?",
     "answers": ["scoping", "overriding", "inheritance", "module specification"],
-    "correctAnswer": "scoping"
+    "correctAnswer": "scoping",
+    "index": 13
   },
   {
     "question": "What does \"shadowing\" in the context of identifiers mean?",
@@ -111,7 +125,8 @@
       "when in a global scope, a variable cannot be accessed within another local scope",
       "when in a module, importing from another module leads to methods being available"
     ],
-    "correctAnswer": "When in a local scope, a variable has the same name as another outside of its scope"
+    "correctAnswer": "When in a local scope, a variable has the same name as another outside of its scope",
+    "index": 14
   },
   {
     "question": "how does importing affect dir()?",
@@ -121,7 +136,8 @@
       "dir() does not change, but __builtins__ does change",
       "dir() will still give the output of the current path to the file"
     ],
-    "correctAnswer": "the imported module / method gets added to dir()"
+    "correctAnswer": "the imported module / method gets added to dir()",
+    "index": 15
   },
   {
     "question": "why is it a bad idea to do import *?",
@@ -131,12 +147,14 @@
       "because it is simply a tacky way of writing import (module)",
       "because it risks us being unable to save in many IDEs"
     ],
-    "correctAnswer": "because we're importing too many top-level identifiers"
+    "correctAnswer": "because we're importing too many top-level identifiers",
+    "index": 16
   },
   {
     "question": "can we use import in a function / method?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 17
   },
   {
     "question": "A module is loaded _____",
@@ -147,7 +165,8 @@
       "always",
       "never"
     ],
-    "correctAnswer": "only the first time it's imported"
+    "correctAnswer": "only the first time it's imported",
+    "index": 18
   },
   {
     "question": "what is __dict__?",
@@ -157,22 +176,26 @@
       "A dictionary of all functional components of an object",
       "A dictionary of all errors in an object"
     ],
-    "correctAnswer": "A dictionary of all attributes of an object"
+    "correctAnswer": "A dictionary of all attributes of an object",
+    "index": 19
   },
   {
     "question": "What can we do to a __dict__?",
     "answers": ["all of these", "Add", "Delete", "Replace"],
-    "correctAnswer": "all of these"
+    "correctAnswer": "all of these",
+    "index": 20
   },
   {
     "question": "will methods appear in a class' __dict__?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 21
   },
   {
     "question": "Will a method of a class be stored in the class' or its object's __dict__?",
     "answers": ["class", "object"],
-    "correctAnswer": "class"
+    "correctAnswer": "class",
+    "index": 22
   },
   {
     "question": "difference between mappingproxy and dictionary?",
@@ -181,7 +204,8 @@
       "We can't read a mappingproxy",
       "We can't open a mappingproxy as a file"
     ],
-    "correctAnswer": "We can't write to a mappingproxy"
+    "correctAnswer": "We can't write to a mappingproxy",
+    "index": 23
   },
   {
     "question": "when we define a value in a class (def or variable), it is a?",
@@ -191,7 +215,8 @@
       "unnamed attribute",
       "AttributeError"
     ],
-    "correctAnswer": "class attribute"
+    "correctAnswer": "class attribute",
+    "index": 24
   },
   {
     "question": "when we store a value in an object, it is a?",
@@ -201,7 +226,8 @@
       "unnamed attribute",
       "AttributeError"
     ],
-    "correctAnswer": "object attribute"
+    "correctAnswer": "object attribute",
+    "index": 25
   },
   {
     "question": "when we access an attribute of an object, python first checks the _____, then the _____",
@@ -211,7 +237,8 @@
       "attribute / name",
       "name / attribute"
     ],
-    "correctAnswer": "object / class"
+    "correctAnswer": "object / class",
+    "index": 26
   },
   {
     "question": "if we wanted a method to be a class attribute that does not return a new class, we would put a _____ on top, which is _____?",
@@ -221,7 +248,8 @@
       "method / @staticmethod",
       "method / @classmethod"
     ],
-    "correctAnswer": "decorator / @staticmethod"
+    "correctAnswer": "decorator / @staticmethod",
+    "index": 27
   },
   {
     "question": "if we wanted a method to be a class attribute that does indeed return a new class, we would put a _____ on top, which is _____?",
@@ -231,7 +259,8 @@
       "method / @staticmethod",
       "method / @classmethod"
     ],
-    "correctAnswer": "decorator / @classmethod"
+    "correctAnswer": "decorator / @classmethod",
+    "index": 28
   },
   {
     "question": "what is the difference between classmethod and staticmethod?",
@@ -241,7 +270,8 @@
       "staticmethod returns a function within a class, but classmethod returns a varaible within a class",
       "classmethod returns a function within a class, but staticmethod returns a varaible within a class"
     ],
-    "correctAnswer": "classmethod returns a new class, but staticmethod only returns methods or varaibles within a class"
+    "correctAnswer": "classmethod returns a new class, but staticmethod only returns methods or varaibles within a class",
+    "index": 29
   },
   {
     "question": "_____ comes first, _____ comes second?",
@@ -251,7 +281,8 @@
       "unpacking, keyword",
       "keyword, unpacking"
     ],
-    "correctAnswer": "positional, keyword"
+    "correctAnswer": "positional, keyword",
+    "index": 30
   },
   {
     "question": "what is a positional argument?",
@@ -261,7 +292,8 @@
       "an argument matched based on the paramater's names",
       "an argument using unpacking operators"
     ],
-    "correctAnswer": "an argument matched with the order it's provided"
+    "correctAnswer": "an argument matched with the order it's provided",
+    "index": 31
   },
   {
     "question": "what is a keyword argument?",
@@ -271,7 +303,8 @@
       "an argument matched opposite to the order provided",
       "an argument using unpacking operators"
     ],
-    "correctAnswer": "an argument matched based on the paramater's names"
+    "correctAnswer": "an argument matched based on the paramater's names",
+    "index": 32
   },
   {
     "question": "what does *variable denote?",
@@ -282,7 +315,8 @@
       "iterable pre-packing",
       "iterable post-packing"
     ],
-    "correctAnswer": "iterable unpacking"
+    "correctAnswer": "iterable unpacking",
+    "index": 33
   },
   {
     "question": "what does def f(*variable) denote?",
@@ -293,7 +327,8 @@
       "iterable pre-packing",
       "iterable post-packing"
     ],
-    "correctAnswer": "iterable packing"
+    "correctAnswer": "iterable packing",
+    "index": 34
   },
   {
     "question": "what does unpacking do?",
@@ -303,17 +338,20 @@
       "it makes a generator from an iterable",
       "it takes individual elements and makes a generator"
     ],
-    "correctAnswer": "it seperates an iterable into its individual elements"
+    "correctAnswer": "it seperates an iterable into its individual elements",
+    "index": 35
   },
   {
     "question": "does unpacking require an iterable with exactly as many elements as there are parameters?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 36
   },
   {
     "question": "does unpacking have to be the only argument in a function call?",
     "answers": ["No", "Yes"],
-    "correctAnswer": "No"
+    "correctAnswer": "No",
+    "index": 37
   },
   {
     "question": "what does **variable denote?",
@@ -324,22 +362,26 @@
       "iterable packing",
       "dictionary pre-packing"
     ],
-    "correctAnswer": "dictionary unpacking"
+    "correctAnswer": "dictionary unpacking",
+    "index": 38
   },
   {
     "question": "what does a default argument look like?",
     "answers": ["x = False", "x", "x -> Hello", "x : Hello"],
-    "correctAnswer": "x = False"
+    "correctAnswer": "x = False",
+    "index": 39
   },
   {
     "question": "default arguments must go at the _____ of function parameters?",
     "answers": ["end", "beginning", "middle", "boundaries"],
-    "correctAnswer": "end"
+    "correctAnswer": "end",
+    "index": 40
   },
   {
     "question": "which one of these should you not write as a default argument?",
     "answers": ["x = []", "x = \"\"", "x = None", "x = ()", "x = 1"],
-    "correctAnswer": "x = []"
+    "correctAnswer": "x = []",
+    "index": 41
   },
   {
     "question": "which one of these is valid?",
@@ -350,7 +392,8 @@
       "def f(a, *b, *c)",
       "def f(a = 1, *b = [1, 2])"
     ],
-    "correctAnswer": "def f(a, *b, **c)"
+    "correctAnswer": "def f(a, *b, **c)",
+    "index": 42
   },
   {
     "question": "what does f(a, *, b) mean?",
@@ -360,7 +403,8 @@
       "a must be passed as a positional argument",
       "b must be passed as a positional argument"
     ],
-    "correctAnswer": "b must be passed as a keyword argument"
+    "correctAnswer": "b must be passed as a keyword argument",
+    "index": 43
   },
   {
     "question": "what does f(a, /, b) mean?",
@@ -370,7 +414,8 @@
       "a must be passed as a keyword argument",
       "b must be passed as a positional argument"
     ],
-    "correctAnswer": "a must be passed as a positional argument"
+    "correctAnswer": "a must be passed as a positional argument",
+    "index": 44
   },
   {
     "question": "what does f(a, /, *, b) mean?",
@@ -380,12 +425,14 @@
       "a must be passed as a positional argument and b must be a positional argument",
       "b must be passed as a keyword argument and a must be a keyword argument"
     ],
-    "correctAnswer": "a must be passed as a positional argument and b must be a keyword argument"
+    "correctAnswer": "a must be passed as a positional argument and b must be a keyword argument",
+    "index": 45
   },
   {
     "question": "is f(a, *, /, b) legal?",
     "answers": ["No", "Yes"],
-    "correctAnswer": "No"
+    "correctAnswer": "No",
+    "index": 46
   },
   {
     "question": "what is a context manager?",
@@ -395,7 +442,8 @@
       "a protocol that supports __eq__, __lt__, and __le__",
       "a protocol that supports __init__"
     ],
-    "correctAnswer": "something that performs an \"automatic wrap-up\""
+    "correctAnswer": "something that performs an \"automatic wrap-up\"",
+    "index": 47
   },
   {
     "question": "what protocol does the Python method with follow?",
@@ -406,12 +454,14 @@
       "inheritance",
       "abstract base class"
     ],
-    "correctAnswer": "context manager"
+    "correctAnswer": "context manager",
+    "index": 48
   },
   {
     "question": "what are context managers useful for?",
     "answers": ["all of these", "sockets", "files", "unittests"],
-    "correctAnswer": "all of these"
+    "correctAnswer": "all of these",
+    "index": 49
   },
   {
     "question": "what does with self.assertRaises(ValueError) mean?",
@@ -421,7 +471,8 @@
       "if a ValueError is not raised, this is expected, and the program exits normally; otherwise, an error is raised",
       "if a ValueError is not raised, then this is not expected, but the program shouldn't do anything"
     ],
-    "correctAnswer": "if a ValueError is raised, this is expected, and the program exits normally; otherwise, an error is raised"
+    "correctAnswer": "if a ValueError is raised, this is expected, and the program exits normally; otherwise, an error is raised",
+    "index": 50
   },
   {
     "question": "how do I redirect standard output to a variable named \"output\" instead of the shell?",
@@ -431,7 +482,8 @@
       "with io.StringIO() as output:",
       "with redirect_stdout(String()) as output:"
     ],
-    "correctAnswer": "with contextlib.redirect_stdout(io.StringIO()) as output:"
+    "correctAnswer": "with contextlib.redirect_stdout(io.StringIO()) as output:",
+    "index": 51
   },
   {
     "question": "what is a protocol in Python?",
@@ -441,7 +493,8 @@
       "a way for Python to communicate to other languages such as SQL",
       "if an object does not have certain attributes, python will raise an error"
     ],
-    "correctAnswer": "when an object has certain attributes, python knows that to do with them"
+    "correctAnswer": "when an object has certain attributes, python knows that to do with them",
+    "index": 52
   },
   {
     "question": "what dunders included in the context manager protocol?",
@@ -452,17 +505,20 @@
       "__in__, __exit__",
       "__entered__, __exited__"
     ],
-    "correctAnswer": "__enter__, __exit__"
+    "correctAnswer": "__enter__, __exit__",
+    "index": 53
   },
   {
     "question": "what should we return in __exit__ if we want to stop raising an exception?",
     "answers": ["True", "False", "0", "-1", "None"],
-    "correctAnswer": "True"
+    "correctAnswer": "True",
+    "index": 54
   },
   {
     "question": "typically, what does __enter__ return?",
     "answers": ["self", "None", "\"\"", "0", "-1"],
-    "correctAnswer": "self"
+    "correctAnswer": "self",
+    "index": 55
   },
   {
     "question": "what does __exit__ take in?",
@@ -472,7 +528,8 @@
       "__exit__(self, other)",
       "__exit__(self, exc_value, exc_traceback)"
     ],
-    "correctAnswer": "__exit__(self, exc_type, exc_value, exc_traceback)"
+    "correctAnswer": "__exit__(self, exc_type, exc_value, exc_traceback)",
+    "index": 56
   },
   {
     "question": "what is asymptotic analysis?",
@@ -482,47 +539,56 @@
       "a way to measure how much memory an algorithm is using in regards to its input",
       "a way to measure algorithms analagous to \"big O\" notation"
     ],
-    "correctAnswer": "a way to measure how an algorithm changes as the size of input / problem changes"
+    "correctAnswer": "a way to measure how an algorithm changes as the size of input / problem changes",
+    "index": 57
   },
   {
     "question": "if you walk across a room step by step, assuming your steps and the size of the room are constant, a graph of time to cross vs width of the room should be?",
     "answers": ["linear", "exponential", "constant", "factorialized"],
-    "correctAnswer": "linear"
+    "correctAnswer": "linear",
+    "index": 58
   },
   {
     "question": "if you are teleported across a room, a graph of time to cross vs width of the room should be?",
     "answers": ["constant", "linear", "exponential", "factorialized"],
-    "correctAnswer": "constant"
+    "correctAnswer": "constant",
+    "index": 59
   },
   {
     "question": "if an algorithm runs in n^2 + 4n + 5 time, which term do we care about?",
     "answers": ["n^2", "4n", "5", "none of them"],
-    "correctAnswer": "n^2"
+    "correctAnswer": "n^2",
+    "index": 60
   },
   {
     "question": "if an algorithm runs in n^3 + n^2 time, we can say its big-O is?",
     "answers": ["n^3", "n^2", "n", "1"],
-    "correctAnswer": "n^3"
+    "correctAnswer": "n^3",
+    "index": 61
   },
   {
     "question": "if an algorithm runs in n^3 + n^2 time, we can say its big-O is?",
     "answers": ["all of these", "n^3", "n^4", "n^5"],
-    "correctAnswer": "all of these"
+    "correctAnswer": "all of these",
+    "index": 62
   },
   {
     "question": "if an algorithm runs in n^3 + n^2 time, we can say its closest-fit big-O is?",
     "answers": ["n^3", "n^4", "n^5", "all of these"],
-    "correctAnswer": "n^3"
+    "correctAnswer": "n^3",
+    "index": 63
   },
   {
     "question": "if an algorithm appends one element to a list for each element in the input, its closest-fit big O memory usage is?",
     "answers": ["n", "1", "n^2", "n!", "e^n"],
-    "correctAnswer": "n"
+    "correctAnswer": "n",
+    "index": 64
   },
   {
     "question": "if an algorithm appends one element to a list for each element in the input, but does this for every element in the input, its closest-fit big O time is?",
     "answers": ["n^2", "1", "n", "n!", "e^n"],
-    "correctAnswer": "n^2"
+    "correctAnswer": "n^2",
+    "index": 65
   },
   {
     "question": "why is big-O notation useful?",
@@ -532,7 +598,8 @@
       "it allows us to precisely determine how much time / memory a function will take up",
       "it allows us to understand the internals of a function much better"
     ],
-    "correctAnswer": "it allows us to ignore the lower-level details and focus on the function's rate of growth"
+    "correctAnswer": "it allows us to ignore the lower-level details and focus on the function's rate of growth",
+    "index": 66
   },
   {
     "question": "what should a python list be made up of?",
@@ -542,12 +609,14 @@
       "reference to its start, step and end",
       "ability to know exactly where it's current iterated index is"
     ],
-    "correctAnswer": "reference to a block of memory, its size, its capacity"
+    "correctAnswer": "reference to a block of memory, its size, its capacity",
+    "index": 67
   },
   {
     "question": "indexing for a list uses?",
     "answers": ["constant time", "exponential time", "n^2 time", "n time"],
-    "correctAnswer": "constant time"
+    "correctAnswer": "constant time",
+    "index": 68
   },
   {
     "question": "if a list is randomly (or unknowingly) organized, the common algorithm we use to search for an element is called?",
@@ -558,17 +627,20 @@
       "merge search",
       "PQ search"
     ],
-    "correctAnswer": "sequential / linear search"
+    "correctAnswer": "sequential / linear search",
+    "index": 69
   },
   {
     "question": "What is the time-complexity of sequential search in the best case scenario?",
     "answers": ["1", "n", "n^2", "n^3", "log n"],
-    "correctAnswer": "1"
+    "correctAnswer": "1",
+    "index": 70
   },
   {
     "question": "What is the time-complexity of sequential search in the worst case scenario?",
     "answers": ["n", "1", "n^2", "n^3", "log n"],
-    "correctAnswer": "n"
+    "correctAnswer": "n",
+    "index": 71
   },
   {
     "question": "The algorithm of binary search neccessitates that?",
@@ -578,7 +650,8 @@
       "the list be ordered in a tuple-like order",
       "does not require the list to be ordered in any way"
     ],
-    "correctAnswer": "the list be ordered in ascending / descending order"
+    "correctAnswer": "the list be ordered in ascending / descending order",
+    "index": 72
   },
   {
     "question": "The binary search procedure is?",
@@ -588,17 +661,20 @@
       "pick the largest element, compare it to the desired element; then decrease sequentially until you reach your desired element",
       "pick the middle element, compare it to the desired element; then compare the current index with the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half"
     ],
-    "correctAnswer": "pick the middle element, compare it to the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half"
+    "correctAnswer": "pick the middle element, compare it to the desired element; if it's less than or greater than, move to the corresponding half of the list and ignore the other half",
+    "index": 73
   },
   {
     "question": "What is the time-complexity of binary search overall?",
     "answers": ["log n", "1", "n", "n^2", "n^3"],
-    "correctAnswer": "log n"
+    "correctAnswer": "log n",
+    "index": 74
   },
   {
     "question": "What is the memory-complexity of binary search overall?",
     "answers": ["1", "log n", "n", "n^2", "n^3"],
-    "correctAnswer": "1"
+    "correctAnswer": "1",
+    "index": 75
   },
   {
     "question": "Why do we not always use binary search if it's so efficient?",
@@ -608,7 +684,8 @@
       "Because not all lists can be sorted in a non-trivial amount of time, and thus cannot be searched using binary search",
       "Because not all lists are sorted, and therefore cannot be searched using binary search"
     ],
-    "correctAnswer": "all of these"
+    "correctAnswer": "all of these",
+    "index": 76
   },
   {
     "question": "What is a relational database?",
@@ -618,7 +695,8 @@
       "A database that can be sorted efficiently (like a priority queue)",
       "A database that is both efficient and effective at all types of problems"
     ],
-    "correctAnswer": "A database that stores data with explicit correlations to one another (like students and courses)"
+    "correctAnswer": "A database that stores data with explicit correlations to one another (like students and courses)",
+    "index": 77
   },
   {
     "question": "Which can be an example of a primary key?",
@@ -628,7 +706,8 @@
       "Payment amount",
       "Course units"
     ],
-    "correctAnswer": "Taxpayer ID"
+    "correctAnswer": "Taxpayer ID",
+    "index": 78
   },
   {
     "question": "Which one of these is a many to many relationship?",
@@ -638,7 +717,8 @@
       "primary key to rows",
       "Student to their ID"
     ],
-    "correctAnswer": "Customers to cart items"
+    "correctAnswer": "Customers to cart items",
+    "index": 79
   },
   {
     "question": "Which one of these is a one to one relationship?",
@@ -648,12 +728,14 @@
       "class to professor",
       "people to names"
     ],
-    "correctAnswer": "primary key to rows"
+    "correctAnswer": "primary key to rows",
+    "index": 80
   },
   {
     "question": "When we store one table's primary key in some other table, it is typically referred to as?",
     "answers": ["Foreign key", "Primary key", "Secondary key", "Identity key"],
-    "correctAnswer": "Foreign key"
+    "correctAnswer": "Foreign key",
+    "index": 81
   },
   {
     "question": "Typically, if a DBMS enforces referential integrity, which of the following will it prevent?",
@@ -663,7 +745,8 @@
       "if we store a value that has an invalid data type, then it would fail automatically",
       "if we store a value that has an invalid null type, then it would fail automatically"
     ],
-    "correctAnswer": "if we store a value that has an invalid foriegn key, then it would fail automatically"
+    "correctAnswer": "if we store a value that has an invalid foriegn key, then it would fail automatically",
+    "index": 82
   },
   {
     "question": "Which of these is a valid way to create a table person with rows person_id, name, and age?",
@@ -673,7 +756,8 @@
       "CREATE TABLE person(\n    person_id,\n    name,\n    age\n) STRICT;",
       "CREATE TABLE person(\n    person_id INTEGER;\n    name TEXT;\n    age INTEGER;\n) STRICT;\n"
     ],
-    "correctAnswer": "CREATE TABLE person(\n    person_id INTEGER PRIMARY KEY,\n    name TEXT,\n    age INTEGER\n) STRICT;"
+    "correctAnswer": "CREATE TABLE person(\n    person_id INTEGER PRIMARY KEY,\n    name TEXT,\n    age INTEGER\n) STRICT;",
+    "index": 83
   },
   {
     "question": "In order to run a statement in python's sqlite3, we use which command?",
@@ -683,7 +767,8 @@
       "connection.fetchone('SELECT name FROM example;')",
       "connection.close('SELECT name FROM example;')"
     ],
-    "correctAnswer": "connection.execute('SELECT name FROM example;')"
+    "correctAnswer": "connection.execute('SELECT name FROM example;')",
+    "index": 84
   },
   {
     "question": "Which of these commands is a valid way to run a sqlite3 command?",
@@ -693,7 +778,8 @@
       "connection = sqlite3.execute(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()",
       "connection = cursor.execute(':memory')\ncursor = connection.execute('SELECT name FROM example;')\nconnection.fetchone()\nconnection.close()\n"
     ],
-    "correctAnswer": "connection = sqlite3.connect(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()"
+    "correctAnswer": "connection = sqlite3.connect(':memory')\ncursor = connection.execute('SELECT name FROM example;')\ncursor.fetchone()\ncursor.close()",
+    "index": 85
   },
   {
     "question": "Which of these commands is a valid way to insert a row containing example_id and name into the table example?",
@@ -704,7 +790,8 @@
       "INSERT INTO example()\nVALUES;",
       "INTO example(example_id, name)\nINSERT VALUES(1, 'example');\n"
     ],
-    "correctAnswer": "INSERT INTO example(example_id, name)\nVALUES(1, 'example');"
+    "correctAnswer": "INSERT INTO example(example_id, name)\nVALUES(1, 'example');",
+    "index": 86
   },
   {
     "question": "Which of these commands is a valid way to select example_id and name from the table example?",
@@ -714,7 +801,8 @@
       "SELECT example\nFROM example_id, name;",
       "GET example_id, name\nFROM example;\n"
     ],
-    "correctAnswer": "SELECT example_id, name\nFROM example;"
+    "correctAnswer": "SELECT example_id, name\nFROM example;",
+    "index": 87
   },
   {
     "question": "Which of these commands is a valid way to select name from the table example where the age is less than 20?",
@@ -724,7 +812,8 @@
       "SELECT example\nFROM name\nFROM age < 20;",
       "GET name\nFROM example\nWHERE age < 20;\n"
     ],
-    "correctAnswer": "SELECT name\nFROM example\nWHERE age < 20;"
+    "correctAnswer": "SELECT name\nFROM example\nWHERE age < 20;",
+    "index": 88
   },
   {
     "question": "Which of these commands is a valid way to select name from the table example where the age is between 10 and 30, ordered by name length from largest to smallest (hint, largest -> smallest is in descending or ascending order)?",
@@ -736,12 +825,14 @@
       "SELECT name\nFROM example\nWHERE age GREATER THAN 10 AND age LESS THAN 30\nORDER BY length(name) DESC;",
       "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY name DESC;\n"
     ],
-    "correctAnswer": "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY length(name) DESC;"
+    "correctAnswer": "SELECT name\nFROM example\nWHERE age BETWEEN 10 AND 30\nORDER BY length(name) DESC;",
+    "index": 89
   },
   {
     "question": "In Python's sqlite, is 0 considered \"falsy\"?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 90
   },
   {
     "question": "Which of these commands would be valid?",
@@ -749,7 +840,8 @@
       "SELECT example_id\nFROM example\nWHERE age < 10\nORDER BY age DESC;",
       "SELECT example_id\nFROM example\nORDER BY age DESC\nWHERE age < 10;\n"
     ],
-    "correctAnswer": "SELECT example_id\nFROM example\nWHERE age < 10\nORDER BY age DESC;"
+    "correctAnswer": "SELECT example_id\nFROM example\nWHERE age < 10\nORDER BY age DESC;",
+    "index": 91
   },
   {
     "question": "Which of these commands is a valid way to update a person named Tommy's age to 15?",
@@ -759,7 +851,8 @@
       "SET person\nUPDATE age = 15\nWHERE name = Tommy;",
       "UPDATE person\nWHERE name = Tommy\nTO age = 15;\n"
     ],
-    "correctAnswer": "UPDATE person\nSET age = 15\nWHERE name = \"Tommy\";"
+    "correctAnswer": "UPDATE person\nSET age = 15\nWHERE name = \"Tommy\";",
+    "index": 92
   },
   {
     "question": "What would the following statement do?\nUPDATE person\nSET age = 0;",
@@ -769,7 +862,8 @@
       "Produce an error",
       "Rename the age attribute to 0\n"
     ],
-    "correctAnswer": "Set everyone's age to 0"
+    "correctAnswer": "Set everyone's age to 0",
+    "index": 93
   },
   {
     "question": "Which of these commands is a valid way to delete a person named Tommy?",
@@ -780,7 +874,8 @@
       "UPDATE person\nDELETE name\nWHERE name = \"Tommy\"",
       "UPDATE person\nSET name = \"Tommy\"\nDELETE\n"
     ],
-    "correctAnswer": "DELETE\nFROM person\nWHERE name = \"Tommy\""
+    "correctAnswer": "DELETE\nFROM person\nWHERE name = \"Tommy\"",
+    "index": 94
   },
   {
     "question": "Which of these commands deletes a table?",
@@ -790,7 +885,8 @@
       "UPDATE example DELETE;",
       "DROP example;"
     ],
-    "correctAnswer": "DROP TABLE example;"
+    "correctAnswer": "DROP TABLE example;",
+    "index": 95
   },
   {
     "question": "Which of these commands is a valid way to get all person_ids where a person's name doesn't exist?",
@@ -800,7 +896,8 @@
       "SELECT person_id\nFROM person\nWHERE name is NONE;",
       "SELECT person_id\nFROM person\nWHERE name = NONE;\n"
     ],
-    "correctAnswer": "SELECT person_id\nFROM person\nWHERE name is NULL;"
+    "correctAnswer": "SELECT person_id\nFROM person\nWHERE name is NULL;",
+    "index": 96
   },
   {
     "question": "Which of these commands is a valid way of create a person table where person_id is an integer, primary key, cannot be left empty (must exist)?",
@@ -811,7 +908,8 @@
       "CREATE TABLE person(\n  person_id INTEGER NOT NONE KEY\n) STRICT;",
       "CREATE TABLE person(\n  person_id NOT NULL PRIMARY KEY INTEGER\n) STRICT;\n"
     ],
-    "correctAnswer": "CREATE TABLE person(\n  person_id INTEGER NOT NULL PRIMARY KEY\n) STRICT;"
+    "correctAnswer": "CREATE TABLE person(\n  person_id INTEGER NOT NULL PRIMARY KEY\n) STRICT;",
+    "index": 97
   },
   {
     "question": "Which of these commands is a valid way of create a money table where dollar must exist, is an integer, and must be greater than 0?",
@@ -822,7 +920,8 @@
       "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK dollar > 0\n) STRICT;",
       "CREATE TABLE money(\n  dollar INTEGER NOT NULL IF (dollar > 0)\n) STRICT;\n"
     ],
-    "correctAnswer": "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK (dollar > 0)\n) STRICT;"
+    "correctAnswer": "CREATE TABLE money(\n  dollar INTEGER NOT NULL CHECK (dollar > 0)\n) STRICT;",
+    "index": 98
   },
   {
     "question": "Which of these commands is a valid way of create a person table where name is text, must be unique, cannot be left empty (must exist)?",
@@ -832,7 +931,8 @@
       "CREATE TABLE person(\n  name TEXT UNIQUE\n) STRICT;",
       "CREATE TABLE person(\n  name NOT NULL UNIQUE TEXT\n) STRICT;\n"
     ],
-    "correctAnswer": "CREATE TABLE person(\n  name TEXT UNIQUE NOT NULL\n) STRICT;"
+    "correctAnswer": "CREATE TABLE person(\n  name TEXT UNIQUE NOT NULL\n) STRICT;",
+    "index": 99
   },
   {
     "question": "If we want to rename a column to something easier to handle, how would we do it?",
@@ -842,7 +942,8 @@
       "SELECT s.name\nFROM somethingverylong IS s;",
       "SELECT s.name\nFROM somethingverylong;\n"
     ],
-    "correctAnswer": "SELECT s.name\nFROM somethingverylong AS s;"
+    "correctAnswer": "SELECT s.name\nFROM somethingverylong AS s;",
+    "index": 100
   },
   {
     "question": "If we wanted to create a foreign key that linked the current id to an id stored in a table called person, how would we do this?",
@@ -852,7 +953,8 @@
       "FORIEGN KEY (id) FROM person(id)",
       "id REFERENCES person(id) FOREIGN KEY"
     ],
-    "correctAnswer": "FOREIGN KEY (id) REFERENCES person(id)"
+    "correctAnswer": "FOREIGN KEY (id) REFERENCES person(id)",
+    "index": 101
   },
   {
     "question": "If I wanted to select a person's name from a person table whose favorite color is red, but favorite colors (a row named favorite) are stored in a table called favorite_color linked to the person table with a primary key of person_id, how would I do that?",
@@ -863,7 +965,8 @@
       "SELECT FROM p.name\nWHERE f.favorite = 'red'\nINNER JOIN person AS p, favorite_color AS f;",
       "SELECT p.name\nFROM person AS p\nJOIN favorite_color WITH f WHERE p.person_id = f.person_id\nWHERE f.favorite = 'red';\n"
     ],
-    "correctAnswer": "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f ON p.person_id = f.person_id\nWHERE f.favorite = 'red';"
+    "correctAnswer": "SELECT p.name\nFROM person AS p\nINNER JOIN favorite_color AS f ON p.person_id = f.person_id\nWHERE f.favorite = 'red';",
+    "index": 102
   },
   {
     "question": "Which of these is a way to avoid an SQL injection attack?",
@@ -872,7 +975,8 @@
       "id = connection.clean(id)\nconnection.execute(\n  f'INSERT INTO example(id) VALUES({id})'\n)",
       "connection.execute(\n  f'INSERT INTO example(id) VALUES({id})'\n)\n"
     ],
-    "correctAnswer": "connection.execute(\n  'INSERT INTO example(id) VALUES(?)',\n  ('hello')\n)"
+    "correctAnswer": "connection.execute(\n  'INSERT INTO example(id) VALUES(?)',\n  ('hello')\n)",
+    "index": 103
   },
   {
     "question": "In order to make sure that our changes to our databases are saved, what command must we put at the end of every statement?",
@@ -883,7 +987,8 @@
       "connection.close()",
       "connection.refresh()"
     ],
-    "correctAnswer": "connection.commit()"
+    "correctAnswer": "connection.commit()",
+    "index": 104
   },
   {
     "question": "The comprehension [x for x in range(3)] generates...",
@@ -895,7 +1000,8 @@
       "[1, 2, 3, 4]",
       "[3]"
     ],
-    "correctAnswer": "[0, 1, 2]"
+    "correctAnswer": "[0, 1, 2]",
+    "index": 105
   },
   {
     "question": "The comprehension [x for x in range(10) if x % 3 == 1] generates...",
@@ -906,7 +1012,8 @@
       "[1, 2, 3, 4]",
       "[3]"
     ],
-    "correctAnswer": "[1, 4, 7]"
+    "correctAnswer": "[1, 4, 7]",
+    "index": 106
   },
   {
     "question": "Which comprehension is valid?",
@@ -916,7 +1023,8 @@
       "[x for x in range(10) if x.lower() == 1]",
       "[x for x in x from range(10)]"
     ],
-    "correctAnswer": "[x % 2 for x in range(2, 10)]"
+    "correctAnswer": "[x % 2 for x in range(2, 10)]",
+    "index": 107
   },
   {
     "question": "The comprehension [ [('A', y) if x % 2 == 0 else ('B', y) for x in range(2)] for y in 'hi'] generates...",
@@ -926,7 +1034,8 @@
       "[ [('A', 'h'), ('A', 'i')], [('B', 'h'), ('B', 'i')] ]",
       "[ [('A', 'h'), ('A', 'h')], [('B', 'i'), ('B', 'i')] ]"
     ],
-    "correctAnswer": "[ [('A', 'h'), ('B', 'h')], [('A', 'i'), ('B', 'i')] ]"
+    "correctAnswer": "[ [('A', 'h'), ('B', 'h')], [('A', 'i'), ('B', 'i')] ]",
+    "index": 108
   },
   {
     "question": "Would the following run: {[x] for x in range(10)}",
@@ -936,7 +1045,8 @@
       "Yes, because [x] is unhashable",
       "Yes, because [x] is hashable"
     ],
-    "correctAnswer": "No, because [x] is unhashable"
+    "correctAnswer": "No, because [x] is unhashable",
+    "index": 109
   },
   {
     "question": "What is hashability?",
@@ -946,7 +1056,8 @@
       "If an object is immutable, or in other words cannot be modified",
       "If an object does not have the __hash__ or __eq__ dunders"
     ],
-    "correctAnswer": "If an object can be \"reduced to an essence\" to an almost randomized value"
+    "correctAnswer": "If an object can be \"reduced to an essence\" to an almost randomized value",
+    "index": 110
   },
   {
     "question": "The comprehension {x: list(range(x)) for x in range(3)} generates...",
@@ -956,12 +1067,14 @@
       "{0: [0], 1: [0, 1], 2: [0, 1, 2]}",
       "An error because it has unhashable elements"
     ],
-    "correctAnswer": "{0: [], 1: [0], 2: [0, 1]}"
+    "correctAnswer": "{0: [], 1: [0], 2: [0, 1]}",
+    "index": 111
   },
   {
     "question": "The closest-fit big O-notation of a list comprehension's time complexity would be...",
     "answers": ["n", "1", "n^2", "log n", "n^3"],
-    "correctAnswer": "n"
+    "correctAnswer": "n",
+    "index": 112
   },
   {
     "question": "Ranges store which four things:",
@@ -971,7 +1084,8 @@
       "start, length, step, last",
       "generate, iterate, stop, continue"
     ],
-    "correctAnswer": "start, stop, step, last"
+    "correctAnswer": "start, stop, step, last",
+    "index": 113
   },
   {
     "question": "List indexing works by...",
@@ -980,12 +1094,14 @@
       "subtracting from the last address the size of the reference * n",
       "multiplying the current address by the size of the reference * n"
     ],
-    "correctAnswer": "adding to the current address the size of the reference * n"
+    "correctAnswer": "adding to the current address the size of the reference * n",
+    "index": 114
   },
   {
     "question": "Which of the following is not iterable?",
     "answers": ["int", "str", "list", "set", "dict"],
-    "correctAnswer": "int"
+    "correctAnswer": "int",
+    "index": 115
   },
   {
     "question": "What is the main difference between an interable and an iterator?",
@@ -995,7 +1111,8 @@
       "they're practically the same, with no real differences",
       "iterable has __next__ but iterator does not"
     ],
-    "correctAnswer": "iterable can be iterated, but the iterator knows where is our current value, and what have seen before and might see next"
+    "correctAnswer": "iterable can be iterated, but the iterator knows where is our current value, and what have seen before and might see next",
+    "index": 116
   },
   {
     "question": "Why do we need to distinguish between iterable and iterator?",
@@ -1005,7 +1122,8 @@
       "Because not every iterator needs to keep track of where its current value is",
       "Because Python decided that iterables should be more powerful"
     ],
-    "correctAnswer": "Because not every iterable needs to keep track of all its iterations"
+    "correctAnswer": "Because not every iterable needs to keep track of all its iterations",
+    "index": 117
   },
   {
     "question": "what does iter do?",
@@ -1015,7 +1133,8 @@
       "returns an iteration",
       "returns the object itself"
     ],
-    "correctAnswer": "returns an iterator"
+    "correctAnswer": "returns an iterator",
+    "index": 118
   },
   {
     "question": "What does an iterator do when it reaches the end?",
@@ -1025,27 +1144,32 @@
       "exits without failure",
       "continues iterating"
     ],
-    "correctAnswer": "raises a StopIteration"
+    "correctAnswer": "raises a StopIteration",
+    "index": 119
   },
   {
     "question": "What is included in the iterable protocol?",
     "answers": ["only __iter__", "__iter__, __next__", "__init__"],
-    "correctAnswer": "only __iter__"
+    "correctAnswer": "only __iter__",
+    "index": 120
   },
   {
     "question": "What is included in the iterator protocol?",
     "answers": ["__iter__, __next__", "only __iter__", "__init__"],
-    "correctAnswer": "__iter__, __next__"
+    "correctAnswer": "__iter__, __next__",
+    "index": 121
   },
   {
     "question": "Which dunder gives the python shell an instruction to print?",
     "answers": ["__repr__", "__iadd__", "__gt__", "__init__", "__iter__"],
-    "correctAnswer": "__repr__"
+    "correctAnswer": "__repr__",
+    "index": 122
   },
   {
     "question": "typically, __iter__ should return a _____",
     "answers": ["iterator", "iterable", "the object itself"],
-    "correctAnswer": "iterator"
+    "correctAnswer": "iterator",
+    "index": 123
   },
   {
     "question": "What is the protocol of following program?\ndef Class:\n  def __iter__(self):\n    return self\n\n  def __next__(self):\n    return 1",
@@ -1056,7 +1180,8 @@
       "context manager",
       "none, because it supports no protocol\n"
     ],
-    "correctAnswer": "iterator and iterable"
+    "correctAnswer": "iterator and iterable",
+    "index": 124
   },
   {
     "question": "What do generators do?",
@@ -1066,27 +1191,32 @@
       "calculates all results and returns all results",
       "does not calculate all results but returns all results"
     ],
-    "correctAnswer": "does not calculate all results and returns one result at a time"
+    "correctAnswer": "does not calculate all results and returns one result at a time",
+    "index": 125
   },
   {
     "question": "Which keyword is included in all generators?",
     "answers": ["yield", "return", "while", "do", "sequence", "iter"],
-    "correctAnswer": "yield"
+    "correctAnswer": "yield",
+    "index": 126
   },
   {
     "question": "if a generator wants to return not a generator, but all results from a previous generator, we use",
     "answers": ["yield from", "yield", "yield with", "return"],
-    "correctAnswer": "yield from"
+    "correctAnswer": "yield from",
+    "index": 127
   },
   {
     "question": "are generators iterators?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 128
   },
   {
     "question": "What does this output?\ndef example():\n  for i in range(3):\n    yield i\n\nex = example()\nnext(ex)\nnext(ex)\nnext(ex)",
     "answers": ["0\n1\n2", "1\n2\n3", "0\n1\n2\n3", "StopIteration\n"],
-    "correctAnswer": "0\n1\n2"
+    "correctAnswer": "0\n1\n2",
+    "index": 129
   },
   {
     "question": "What does this output?\ndef example():\n  for i in range(2):\n    return 12\n    yield i\n\nex = example()\nnext(ex)\nnext(ex)",
@@ -1096,12 +1226,14 @@
       "12\n0\nStopIteration",
       "0\n12\nStopIteration\n"
     ],
-    "correctAnswer": "StopIteration"
+    "correctAnswer": "StopIteration",
+    "index": 130
   },
   {
     "question": "What does this output?\ndef example():\n  yield 1\n  print(\"hi\")\n  yield 2\n\nex = example()\nnext(ex)",
     "answers": ["1", "1\nhi\n2", "1\nhi", "StopIteration\n"],
-    "correctAnswer": "1"
+    "correctAnswer": "1",
+    "index": 131
   },
   {
     "question": "What does this output?\nclass Example:\n  def __init__(self, start):\n    self._start = start\n\n  def __iter__(self):\n    return self\n\n  def __next__(self):\n    result = self._start\n    self._start += 1\n    if(result < 5):\n      return result\n    else:\n      raise StopIteration\n\nex = Example(4)\nnext(ex)\nnext(ex)",
@@ -1111,12 +1243,14 @@
       "StopIteration",
       "0\n1\n2\n3\n4\n5\nStopIteration\n"
     ],
-    "correctAnswer": "4\nStopIteration"
+    "correctAnswer": "4\nStopIteration",
+    "index": 132
   },
   {
     "question": "What is the type of (x for x in range(3))?",
     "answers": ["generator", "iterator", "tuple", "list"],
-    "correctAnswer": "generator"
+    "correctAnswer": "generator",
+    "index": 133
   },
   {
     "question": "What does this output?\ndef example():\n  start = 0\n  while True:\n    yield start\n    start += 1\n\ni = list(example())",
@@ -1126,7 +1260,8 @@
       "[0, 1, 2, 3, 4, 5]",
       "It would run into RecursionError\n"
     ],
-    "correctAnswer": "It would never finish running"
+    "correctAnswer": "It would never finish running",
+    "index": 134
   },
   {
     "question": "What does this output?\ndef example(a, b):\n  yield from a\n  yield from b\n\nex = example([1,2,3], list(range(2)))\nfor i in ex:\n  print(i)",
@@ -1138,7 +1273,8 @@
       "StopIteration",
       "ValueError\n"
     ],
-    "correctAnswer": "1\n2\n3\n0\n1"
+    "correctAnswer": "1\n2\n3\n0\n1",
+    "index": 135
   },
   {
     "question": "What does this output?\ndef example(a, b, c):\n  yield next(c)\n  yield from a\n  yield next(b)\n  yield next(c)\n\nex = example(range(1,3), iter((1,2)), (x for x in range(10,0,-4)))\nprint(list(ex))",
@@ -1150,17 +1286,20 @@
       "StopIteration",
       "ValueError\n"
     ],
-    "correctAnswer": "[10, 1, 2, 1, 6]"
+    "correctAnswer": "[10, 1, 2, 1, 6]",
+    "index": 136
   },
   {
     "question": "If a class does not have a __bool__ but has a __len__ that always returns 1, it will always evaluate to",
     "answers": ["True", "False"],
-    "correctAnswer": "True"
+    "correctAnswer": "True",
+    "index": 137
   },
   {
     "question": "What does this output?\nclass Example:\n  def __init__(self, value):\n    self._value = value\n\n  def __len__(self):\n    return self._value + 1\n\n  def __bool__(self):\n    return self._value % 2 == 0\n\nex = Example(0)\nex1 = Example(1)\nprint(len(ex) + len(ex1))\nif ex and ex1:\n  print(\"Hello!\")",
     "answers": ["3", "3\nHello!", "1", "1\nHello", "ValueError\n"],
-    "correctAnswer": "3"
+    "correctAnswer": "3",
+    "index": 138
   },
   {
     "question": "The sequence protocol requires _____ and _____, objects with this protocol are automatically _____",
@@ -1170,7 +1309,8 @@
       "__getitem__, __setitem__, mutable",
       "__getitem__, __setitem__, immutable"
     ],
-    "correctAnswer": "__len__, __getitem__, iterable"
+    "correctAnswer": "__len__, __getitem__, iterable",
+    "index": 139
   },
   {
     "question": "What does this output?\nclass Example:\n  def __getitem__(self, index):\n    if index < 0:\n      return \"not valid\"\n    if index == 0:\n      return 0\n    if index > 0:\n      return index * 2\n\nex = Example()\nprint(ex[-10], ex[0], ex[10])",
@@ -1181,7 +1321,8 @@
       "-10 0 10",
       "ValueError\n"
     ],
-    "correctAnswer": "not valid 0 20"
+    "correctAnswer": "not valid 0 20",
+    "index": 140
   },
   {
     "question": "If a class called Example has the dunders __getitem__,  __reversed__ and __contains__, which of the following would be legal?",
@@ -1191,7 +1332,8 @@
       "ex = Example()\nprint(reversed(ex)[0], 'A' in ex, len(ex))",
       "ex = Example()\nprint(reversed(ex)[0], 'A' in ex, len(reversed(ex)))\n"
     ],
-    "correctAnswer": "ex = Example()\nprint(reversed(ex)[0], 'A' in ex)"
+    "correctAnswer": "ex = Example()\nprint(reversed(ex)[0], 'A' in ex)",
+    "index": 141
   },
   {
     "question": "In slicing notation, list[a:b:c] means...",
@@ -1201,7 +1343,8 @@
       "a is stop, b is start, c is step",
       "a is start, b is start, c is an alternate start"
     ],
-    "correctAnswer": "a is start, b is stop, c is step"
+    "correctAnswer": "a is start, b is stop, c is step",
+    "index": 142
   },
   {
     "question": "When we perform slicing, the _____ method is called and the _____ object is passed in as a parameter",
@@ -1212,7 +1355,8 @@
       "__getitem__, index",
       "__setitem__, index"
     ],
-    "correctAnswer": "__getitem__, slice"
+    "correctAnswer": "__getitem__, slice",
+    "index": 143
   },
   {
     "question": "What would the following output?\ns = slice(1,10,2)\ns1 = slice(None, None, None)\nprint(s.indices(5))\nprint(s1.indices(3))",
@@ -1222,7 +1366,8 @@
       "(1, 4, 2)\n(0, 3, 1)",
       "(1, 4, 2)\n(None, None, None)\n"
     ],
-    "correctAnswer": "(1, 5, 2)\n(0, 3, 1)"
+    "correctAnswer": "(1, 5, 2)\n(0, 3, 1)",
+    "index": 144
   },
   {
     "question": "Hashable objects are required to be _____",
@@ -1233,7 +1378,8 @@
       "strings",
       "no requirements"
     ],
-    "correctAnswer": "immutable"
+    "correctAnswer": "immutable",
+    "index": 145
   },
   {
     "question": "What would the following print?\nclass Example:\n  def __hash__(self):\n    return hash(())\n\nex = Example()\nprint(hash(ex))",
@@ -1243,7 +1389,8 @@
       "994765038475654834",
       "TypeError\n"
     ],
-    "correctAnswer": "Cannot determine"
+    "correctAnswer": "Cannot determine",
+    "index": 146
   },
   {
     "question": "a is b is analagous to...",
@@ -1254,7 +1401,8 @@
       "a >= b",
       "a <> b"
     ],
-    "correctAnswer": "id(a) == id(b)"
+    "correctAnswer": "id(a) == id(b)",
+    "index": 147
   },
   {
     "question": "Which three dunders do we need in order to satisfy all comparisons?",
@@ -1264,7 +1412,8 @@
       "__eq__, __lt__, __gt__",
       "__ne__, __gt__, __lte__"
     ],
-    "correctAnswer": "__eq__, __lt__, __lte__"
+    "correctAnswer": "__eq__, __lt__, __lte__",
+    "index": 148
   },
   {
     "question": "__eq__ takes in _____ and _____ as parameters?",
@@ -1274,7 +1423,8 @@
       "self, name",
       "it only takes in self"
     ],
-    "correctAnswer": "self, other"
+    "correctAnswer": "self, other",
+    "index": 149
   },
   {
     "question": "Which of the following is true?",
@@ -1284,12 +1434,14 @@
       "If two objects are not equivalent, they must have the same hash",
       "If two objects have different hashes, they must still be equivalent"
     ],
-    "correctAnswer": "If two objects are equivalent, they must have the same hash"
+    "correctAnswer": "If two objects are equivalent, they must have the same hash",
+    "index": 150
   },
   {
     "question": "If you implement __hash__, you should implement _____ as well",
     "answers": ["__eq__", "__ne__", "__getitem__", "__getattr__", "__gt__"],
-    "correctAnswer": "__eq__"
+    "correctAnswer": "__eq__",
+    "index": 151
   },
   {
     "question": "If we provide an __eq__ without providing a __hash__, what does Python do?",
@@ -1299,17 +1451,20 @@
       "it does nothing",
       "__hash__ is set to __ne__"
     ],
-    "correctAnswer": "__hash__ is set to None"
+    "correctAnswer": "__hash__ is set to None",
+    "index": 152
   },
   {
     "question": "What does the following output?\nclass A:\n  def __eq__(self, other):\n    return True\n\nclass B:\n  def __eq__(self, other):\n    return False\n\na = A()\nb = B()\nprint(a == b)\nprint(b == a)",
     "answers": ["True\nFalse", "False\nTrue", "True\nTrue", "False\nFalse\n"],
-    "correctAnswer": "True\nFalse"
+    "correctAnswer": "True\nFalse",
+    "index": 153
   },
   {
     "question": "What does the following output?\nclass A:\n  def __len__(self):\n    return 0\n\nclass B:\n  def __eq__(self, other):\n    return len(other) == 0\n\na = A()\nb = B()\nprint(a == b)\nprint(b == a)",
     "answers": ["True\nTrue", "False\nTrue", "True\nFalse", "False\nFalse\n"],
-    "correctAnswer": "True\nTrue"
+    "correctAnswer": "True\nTrue",
+    "index": 154
   },
   {
     "question": "if the operand + is not supported between two different types, which should __add__ return?",
@@ -1321,17 +1476,20 @@
       "TypeError",
       "Exception"
     ],
-    "correctAnswer": "NotImplemented"
+    "correctAnswer": "NotImplemented",
+    "index": 155
   },
   {
     "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint(1 + a)",
     "answers": ["TypeError", "2", "1", "NotImplemented\n"],
-    "correctAnswer": "TypeError"
+    "correctAnswer": "TypeError",
+    "index": 156
   },
   {
     "question": "What does the following output?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\na = A(1)\nprint((1 + a)._value)",
     "answers": ["2", "TypeError", "1", "NotImplemented\n"],
-    "correctAnswer": "2"
+    "correctAnswer": "2",
+    "index": 157
   },
   {
     "question": "Which of the following operations would be illegal on this class?\nclass A:\n  def __init__(self, value):\n    self._value = value\n\n  def __add__(self, other):\n    return A(self._value + other)\n\n  def __radd__(self, other):\n    return A(self._value + other)\n\n  def __iadd__(self, other):\n    self._value = self._value + other\n    return self\n\na = A(1)",
@@ -1343,17 +1501,20 @@
       "a + 1.2",
       "1.2 + a\n"
     ],
-    "correctAnswer": "None of these"
+    "correctAnswer": "None of these",
+    "index": 158
   },
   {
     "question": "Which operation does __itruediv__ allow?",
     "answers": ["a /= 1", "a += 1", "a //= 1", "a / a", "1 / a"],
-    "correctAnswer": "a /= 1"
+    "correctAnswer": "a /= 1",
+    "index": 159
   },
   {
     "question": "Which operation does __rsub__ allow?",
     "answers": ["1 - a", "a - 1", "a -= 1", "1 -= a", "-a"],
-    "correctAnswer": "1 - a"
+    "correctAnswer": "1 - a",
+    "index": 160
   },
   {
     "question": "When do we want to use inheritance?",
@@ -1363,12 +1524,14 @@
       "When we want X class to have the same methods but different parameters as Y",
       "When we want X class to be exactly the same as Y, so we can essentially call X multiple times"
     ],
-    "correctAnswer": "When we want X class to be just like Y except for some very minor changes"
+    "correctAnswer": "When we want X class to be just like Y except for some very minor changes",
+    "index": 161
   },
   {
     "question": "Which class do all Python classes inherit from?",
     "answers": ["class", "object", "method", "function", "relation", "python"],
-    "correctAnswer": "object"
+    "correctAnswer": "object",
+    "index": 162
   },
   {
     "question": "if Y inherits X, Y is the _____ class and X is the _____ class",
@@ -1378,7 +1541,8 @@
       "basic, derivative",
       "derivative, basic"
     ],
-    "correctAnswer": "derived, base"
+    "correctAnswer": "derived, base",
+    "index": 163
   },
   {
     "question": "What is the following?\nclass A:\n  pass\n\nclass B(A):\n  pass",
@@ -1388,22 +1552,26 @@
       "hierarchy inheritance",
       "object inheritance\n"
     ],
-    "correctAnswer": "single inheritance"
+    "correctAnswer": "single inheritance",
+    "index": 164
   },
   {
     "question": "What does the following output?\nclass A:\n  pass\n\nclass B(A):\n  pass\n\nprint(A.__eq__ is B.__eq__)",
     "answers": ["True", "False", "AttributeError", "TypeError\n"],
-    "correctAnswer": "True"
+    "correctAnswer": "True",
+    "index": 165
   },
   {
     "question": "What does the following output?\nclass A:\n  pass\n\nclass B(A):\n  pass\n\na = A()\nb = B()\nprint(type(b) is A)\nprint(isinstance(b, A))",
     "answers": ["False\nTrue", "True\nFalse", "False\nFalse", "True\nTrue\n"],
-    "correctAnswer": "False\nTrue"
+    "correctAnswer": "False\nTrue",
+    "index": 166
   },
   {
     "question": "What does the following output?\nclass A:\n  pass\n\na = A()\nprint(isinstance(a, object))",
     "answers": ["True", "False", "Exception\n"],
-    "correctAnswer": "True"
+    "correctAnswer": "True",
+    "index": 167
   },
   {
     "question": "What does the following output?\nclass A:\n  HI = \"hi!\"\n  def value(self):\n    return 10\n\nclass B(A):\n  HELLO = \"hello!\"\n  def value(self):\n    return 25\n\nb = B()\nprint(b.value())\nprint(b.HELLO)\nprint(b.HI)",
@@ -1414,27 +1582,32 @@
       "11\nAttributeError",
       "25\nAttributeError\n"
     ],
-    "correctAnswer": "25\nhello!\nhi!"
+    "correctAnswer": "25\nhello!\nhi!",
+    "index": 168
   },
   {
     "question": "What does the following output?\nclass A:\n  def value(self):\n    return 10\n\nclass B(A):\n  def value(self):\n    return super().value() * 10\n\nb = B()\nprint(b.value())",
     "answers": ["100", "10", "TypeError", "1000\n"],
-    "correctAnswer": "100"
+    "correctAnswer": "100",
+    "index": 169
   },
   {
     "question": "What does the following output?\nclass A:\n  def value(self):\n    return 10\n\nclass B():\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  def unique(self):\n    return 5\n\nc = C()\nd = D()\nprint(c.value())\nprint(d.value())",
     "answers": ["5\n10", "10\n5", "10\n10", "5\n5", "TypeError\n"],
-    "correctAnswer": "5\n10"
+    "correctAnswer": "5\n10",
+    "index": 170
   },
   {
     "question": "What does the following output?\nclass Z:\n  def value(self)\n    return \"z\"\n\nclass A(Z):\n  def value(self):\n    return super().value()\n\nclass B(Z):\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nc = C()\nd = D()\nprint(c.value())\nprint(d.value())",
     "answers": ["5\n5", "10\n5", "10\nz", "5\n10", "TypeError", "5\nz\n"],
-    "correctAnswer": "5\n5"
+    "correctAnswer": "5\n5",
+    "index": 171
   },
   {
     "question": "What does the following output?\nclass A:\n  def value(self):\n    return super().value()\n\nclass B:\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nclass E(C, D):\n  pass\n\ne = E()\nprint(e.value())",
     "answers": ["TypeError", "10", "5", "10\n5\n"],
-    "correctAnswer": "TypeError"
+    "correctAnswer": "TypeError",
+    "index": 172
   },
   {
     "question": "What does the following output?\nclass A:\n  def value(self):\n    return super().value()\n\nclass B:\n  def value(self):\n    return 5\n\nclass C(B, A):\n  pass\n\nclass D(A, B):\n  pass\n\nprint(D.__mro__)\nprint(C.__mro__)",
@@ -1444,12 +1617,14 @@
       "(<class '__main__.A'>, <class '__main__.B'>, <class '__main__.D'>, <class 'object'>)\n(<class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>, <class 'object'>)",
       "(<class 'object'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.D'>)\n(<class 'object'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.C'>)\n"
     ],
-    "correctAnswer": "(<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)"
+    "correctAnswer": "(<class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>)\n(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)",
+    "index": 173
   },
   {
     "question": "What does the following output?\nclass A(ValueError):\n  pass\n\ntry:\n  raise A\nexcept ValueError:\n  print('ValueError')\nexcept A:\n  print('A')",
     "answers": ["ValueError", "A", "ValueError\nA", "A\nValueError\n"],
-    "correctAnswer": "ValueError"
+    "correctAnswer": "ValueError",
+    "index": 174
   },
   {
     "question": "Which type of recursion does the following display?\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
@@ -1460,7 +1635,8 @@
       "multiple, indirect",
       "backtracking\n"
     ],
-    "correctAnswer": "single, direct"
+    "correctAnswer": "single, direct",
+    "index": 175
   },
   {
     "question": "Which is a better name for the following?\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
@@ -1471,12 +1647,14 @@
       "indirect_recursion",
       "fibbonacci_number_n\n"
     ],
-    "correctAnswer": "power_of_2"
+    "correctAnswer": "power_of_2",
+    "index": 176
   },
   {
     "question": "In Python, the time complexity of this function is _____, the memory cost is _____\ndef example(n: int):\n  if n < 1:\n    return 1\n  else:\n    return 2 * example(n - 1)",
     "answers": ["O(n)\nO(n)", "O(n)\nO(1)", "O(1)\nO(1)", "O(1)\nO(n)\n"],
-    "correctAnswer": "O(n)\nO(n)"
+    "correctAnswer": "O(n)\nO(n)",
+    "index": 177
   },
   {
     "question": "When a function f has to call a function g, Python needs to remember...",
@@ -1486,7 +1664,8 @@
       "when g needs to come back to f",
       "when does the recursion hit the base case"
     ],
-    "correctAnswer": "where f left off"
+    "correctAnswer": "where f left off",
+    "index": 178
   },
   {
     "question": "Which function implements tail call recursion?\ndef f(a, b):\n  if a > b:\n    return 1\n  else:\n    return f(a-1, b)",
@@ -1496,7 +1675,8 @@
       "def a():\n  return 20 + f(10, 5)",
       "def a():\n  a = f(10, 5)\n  c = 1 + a\n  return c\n"
     ],
-    "correctAnswer": "def a():\n  c = 1 + 1\n  return f(10, 5)"
+    "correctAnswer": "def a():\n  c = 1 + 1\n  return f(10, 5)",
+    "index": 179
   },
   {
     "question": "If we performed tail-call elimination, the following program's _____ would be _____\ndef a(start, acc):\n  if start < 0:\n    return 1\n  return a(start - 2, acc + 1)",
@@ -1506,7 +1686,8 @@
       "memory usage, O(n)",
       "time complexity, O(n)\n"
     ],
-    "correctAnswer": "memory usage, O(1)"
+    "correctAnswer": "memory usage, O(1)",
+    "index": 180
   },
   {
     "question": "If we performed tail-call elimination, the following program's _____ would be _____\ndef a(start, acc):\n  if start < 0:\n    return 1\n  return a(start - 2, acc) + 1",
@@ -1516,7 +1697,8 @@
       "memory usage, O(1)",
       "time complexity, O(n^2)\n"
     ],
-    "correctAnswer": "memory usage, O(n)"
+    "correctAnswer": "memory usage, O(n)",
+    "index": 181
   },
   {
     "question": "Does Python actually perform tail call elimination? If not, why not? If so, why?",
@@ -1526,7 +1708,8 @@
       "Yes, because then we can write much faster and better programs",
       "Yes, because it has no bearing on Python's internal recursion manager"
     ],
-    "correctAnswer": "No, because it affects the ability to produce good traceback messages"
+    "correctAnswer": "No, because it affects the ability to produce good traceback messages",
+    "index": 182
   },
   {
     "question": "If we wanted tail-call elimination, how would we refactor this program?\ndef a(start):\n  if start <= 0:\n    return 0\n  return a(start - 1) + 1",
@@ -1536,7 +1719,8 @@
       "def a(start):\n  if start <= 0:\n    return 0\n  return 1 + a(start - 1)",
       "def a(start):\n  def a_prime(start):\n    if start <= 0:\n      return 0\n    else:\n      return 1 + a_prime(start - 1)\n  return a_prime(start)\n"
     ],
-    "correctAnswer": "def a(start):\n  def a_prime(start, acc):\n    if start <= 0:\n      return acc\n    else:\n      return a_prime(start - 1, acc + 1)\n  return a_prime(start, 0)"
+    "correctAnswer": "def a(start):\n  def a_prime(start, acc):\n    if start <= 0:\n      return acc\n    else:\n      return a_prime(start - 1, acc + 1)\n  return a_prime(start, 0)",
+    "index": 183
   },
   {
     "question": "What does the following program exhibit?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)",
@@ -1546,7 +1730,8 @@
       "single recursion",
       "factorialized recursion\n"
     ],
-    "correctAnswer": "multiple recursion"
+    "correctAnswer": "multiple recursion",
+    "index": 184
   },
   {
     "question": "What would the following print?\ndef f(n):\n  print(f\"f {n}, \", end='')\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)\n\nf(4)",
@@ -1557,7 +1742,8 @@
       "f(0), f(1), f(0), f(1), f(1), f(2), f(2), f(3), f(4), ",
       "f(0), f(1), f(2), f(1), f(0), f(1), f(2), f(3), f(4), \n"
     ],
-    "correctAnswer": "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), "
+    "correctAnswer": "f(4), f(3), f(2), f(1), f(0), f(1), f(2), f(1), f(0), ",
+    "index": 185
   },
   {
     "question": "What would the following print?\ndef f(n):\n  print(f\"f {n}, \", end='')\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  if n == 2:\n    return 2\n  return f(n-1) + f(n-2)\n\nf(4)",
@@ -1568,7 +1754,8 @@
       "f(4)",
       "f(4), f(3), f(2), f(1), \n"
     ],
-    "correctAnswer": "f(4), f(3), f(2), f(1), f(2), "
+    "correctAnswer": "f(4), f(3), f(2), f(1), f(2), ",
+    "index": 186
   },
   {
     "question": "What would the following print?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  if n == 2:\n    return 2\n  print(f\"f {n}, \", end='')\n  return f(n-1) + f(n-2)\n\nf(4)",
@@ -1579,7 +1766,8 @@
       "f(4)",
       "f(4), f(3), f(2), f(1), \n"
     ],
-    "correctAnswer": "f(4), f(3), "
+    "correctAnswer": "f(4), f(3), ",
+    "index": 187
   },
   {
     "question": "What is Memoization?",
@@ -1589,7 +1777,8 @@
       "A technique used to optimize memory allocation in computer graphics",
       "A cryptographic hashing algorithm like __hash__ in Python"
     ],
-    "correctAnswer": "Remembering the value of a previous call so we can use it for future calls"
+    "correctAnswer": "Remembering the value of a previous call so we can use it for future calls",
+    "index": 188
   },
   {
     "question": "Which of the following is a memoized version of the following?\ndef f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  return f(n-1) + f(n-2)",
@@ -1599,7 +1788,8 @@
       "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  \n  def memoize(n):\n    memo = {}\n    if n in memo:\n      memo[n] = f(n-1) + f(n-2)\n    return memo[n]\n  \n  return memoize(n)",
       "def f(n):\n  if n == 0:\n    return 1\n  if n == 1:\n    return 1\n  \n  def memoize(n):\n    memo = {}\n    if n not in memo:\n      memo[n] = f(n-1) + f(n-2)\n    return memo[n]\n  \n  return memoize(n)\n"
     ],
-    "correctAnswer": "def f(n):\n  final = [None] * max(n + 1, 2)\n  final[0] = 1\n  final[1] = 2\n\n  def f_memo(n):\n    if final[n] is not None:\n      return final[n]\n    else:\n      final[n] = f_memo(n-1) + f_memo(n-2)\n      return final[n]\n\n  return f_memo(n)"
+    "correctAnswer": "def f(n):\n  final = [None] * max(n + 1, 2)\n  final[0] = 1\n  final[1] = 2\n\n  def f_memo(n):\n    if final[n] is not None:\n      return final[n]\n    else:\n      final[n] = f_memo(n-1) + f_memo(n-2)\n      return final[n]\n\n  return f_memo(n)",
+    "index": 189
   },
   {
     "question": "What is dynamic programming (in reference to recursion)?",
@@ -1609,7 +1799,8 @@
       "When we can dynamically generate, during runtime based on the problem's input size, a recursive function",
       "When we can adjust the order in which recursive subproblems are solved"
     ],
-    "correctAnswer": "When we can get rid of our recursive call entirely since we can determine calculations without function calls"
+    "correctAnswer": "When we can get rid of our recursive call entirely since we can determine calculations without function calls",
+    "index": 190
   },
   {
     "question": "What is functional programming?",
@@ -1619,7 +1810,8 @@
       "the program has functional capabilities like OOP",
       "the program functions normally, as opposed to raising an exception"
     ],
-    "correctAnswer": "the program is organized around pure, first-class functions"
+    "correctAnswer": "the program is organized around pure, first-class functions",
+    "index": 191
   },
   {
     "question": "Why is pure functional programming impractical?",
@@ -1629,12 +1821,14 @@
       "Because we can always produce first-class functions",
       "Because pure functions are practical, but resource-intensive"
     ],
-    "correctAnswer": "Because we will often need side effects"
+    "correctAnswer": "Because we will often need side effects",
+    "index": 192
   },
   {
     "question": "Which is not a main benefit of functional programming?",
     "answers": ["Inheritability", "Clarity", "Tesability", "Parallelizability"],
-    "correctAnswer": "Inheritability"
+    "correctAnswer": "Inheritability",
+    "index": 193
   },
   {
     "question": "A lambda function called \"square\" can be written as:",
@@ -1644,7 +1838,8 @@
       "lambda n: return n * n",
       "lambda n:\n  return n * n\n"
     ],
-    "correctAnswer": "lambda n: n * n"
+    "correctAnswer": "lambda n: n * n",
+    "index": 194
   },
   {
     "question": "Which of the following lambda functions are valid?",
@@ -1654,12 +1849,14 @@
       "lambda **y, *x: print(x, y)",
       "lambda a, b, c: [for x in a with b]"
     ],
-    "correctAnswer": "lambda z, *x, **y: print(x, y, z)"
+    "correctAnswer": "lambda z, *x, **y: print(x, y, z)",
+    "index": 195
   },
   {
     "question": "What does the following output?\ndef x(val):\n  return val * 2\n\ndef y(f, v):\n  return f(v)\n\nprint(y(x, ':)'))",
     "answers": [":):)", ":)", "Empty String", "):\n"],
-    "correctAnswer": ":):)"
+    "correctAnswer": ":):)",
+    "index": 196
   },
   {
     "question": "the output is _____, and a is _____?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = y()()",
@@ -1670,7 +1867,8 @@
       "No output, 100",
       "An Exception is raised instead\n"
     ],
-    "correctAnswer": "No output, a function"
+    "correctAnswer": "No output, a function",
+    "index": 197
   },
   {
     "question": "the output is _____, and a is _____?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = z()",
@@ -1681,7 +1879,8 @@
       "hello, 100",
       "No output, 100\n"
     ],
-    "correctAnswer": "An exception is raised instead"
+    "correctAnswer": "An exception is raised instead",
+    "index": 198
   },
   {
     "question": "what does the following output?\ndef y():\n  def z():\n    def x():\n      print('hello!')\n      return 100\n    return x\n  return z\n\na = y()\nb = y()\nprint(a is b)",
@@ -1691,12 +1890,14 @@
       "hello!\nhello!\nFalse",
       "hello!\nhello!\nTrue\n"
     ],
-    "correctAnswer": "False"
+    "correctAnswer": "False",
+    "index": 199
   },
   {
     "question": "what does the following output?\ndef x(f):\n  def y(*args):\n    return not f(*args)\n  return y\n\nprint(x(lambda *args: len(args) > 0)(0))",
     "answers": ["False", "True", "<function>", "None\n"],
-    "correctAnswer": "False"
+    "correctAnswer": "False",
+    "index": 200
   },
   {
     "question": "What is a better name for the function x?\ndef x(f):\n  def y(*args, **kwargs):\n    return -1 / f(*args, **kwargs)\n  return y",
@@ -1708,7 +1909,8 @@
       "create_mult",
       "partial_call\n"
     ],
-    "correctAnswer": "create_inverse"
+    "correctAnswer": "create_inverse",
+    "index": 201
   },
   {
     "question": "What is a better name for the function x?\ndef x(f, *args):\n  def y(*new_args):\n    return f(*args, *new_args)\n  return y",
@@ -1720,7 +1922,8 @@
       "all",
       "create_mult\n"
     ],
-    "correctAnswer": "partial_call"
+    "correctAnswer": "partial_call",
+    "index": 202
   },
   {
     "question": "What does the following output?\nlist(map(lambda n: 2 * n, range(0,10,3)))",
@@ -1731,7 +1934,8 @@
       "[9, 6, 3, 0]",
       "[]\n"
     ],
-    "correctAnswer": "[0, 6, 12, 18]"
+    "correctAnswer": "[0, 6, 12, 18]",
+    "index": 203
   },
   {
     "question": "What does the following output?\nlist(filter(lambda n : n is None or n < 10, [1, 2, None, 10, 11, None]))",
@@ -1743,7 +1947,8 @@
       "[1, 2, None, 10, 11, None]",
       "[10, 11, None, None]\n"
     ],
-    "correctAnswer": "[1, 2, None, None]"
+    "correctAnswer": "[1, 2, None, None]",
+    "index": 204
   },
   {
     "question": "What does the following output?\nlist(map(lambda x: x * 10, filter(lambda n : n > 4, [1, 2, 3, 4, 5 ,6])))",
@@ -1756,27 +1961,32 @@
       "[10, 10, 10]",
       "TypeError\n"
     ],
-    "correctAnswer": "[50, 60]"
+    "correctAnswer": "[50, 60]",
+    "index": 205
   },
   {
     "question": "What does the following output?\n\nimport functools\nfunctools.reduce(lambda a, b: a + b, [1, 2, 3, 4, 5])",
     "answers": ["15", "10", "14", "12", "9\n"],
-    "correctAnswer": "15"
+    "correctAnswer": "15",
+    "index": 206
   },
   {
     "question": "What does the following output?\n\nimport functools\nfunctools.reduce(lambda a, b: a * b, [1, 2, 3, 4], 10)",
     "answers": ["240", "60", "0", "10", "20\n"],
-    "correctAnswer": "240"
+    "correctAnswer": "240",
+    "index": 207
   },
   {
     "question": "What does the following output?\n\nimport functools\nimport operator\nfunctools.reduce(operator.mul, [19, 18, 17, 0], 10)",
     "answers": ["0", "58140", "190", "180\n"],
-    "correctAnswer": "0"
+    "correctAnswer": "0",
+    "index": 208
   },
   {
     "question": "is int callable?",
     "answers": ["No", "Yes"],
-    "correctAnswer": "No"
+    "correctAnswer": "No",
+    "index": 209
   },
   {
     "question": "what makes an object callable?",
@@ -1787,12 +1997,14 @@
       "__get__",
       "__getattr__"
     ],
-    "correctAnswer": "__call__"
+    "correctAnswer": "__call__",
+    "index": 210
   },
   {
     "question": "decorators are prepended by what symbol?",
     "answers": ["@", "#", "def", ":", "="],
-    "correctAnswer": "@"
+    "correctAnswer": "@",
+    "index": 211
   },
   {
     "question": "What should decorators do?",
@@ -1802,12 +2014,14 @@
       "accept strictly a function and return strictly a function",
       "accept strictly a variable and return stricly a variable"
     ],
-    "correctAnswer": "accept an argument and return a function / class"
+    "correctAnswer": "accept an argument and return a function / class",
+    "index": 212
   },
   {
     "question": "What does the following output?\ndef x(f):\n  def returned_f(*args):\n    print('wowza')\n    f(10, *args)\n  return returned_f\n\n@x\ndef y(n, m):\n  print(n * m)\n\ny(10)",
     "answers": ["wowza\n100", "wowza", "100", "AttributeError", "TypeError\n"],
-    "correctAnswer": "wowza\n100"
+    "correctAnswer": "wowza\n100",
+    "index": 213
   },
   {
     "question": "What does the following output?\ndef x(f):\n  def returned_f(*args):\n    print('wowza')\n    f(10, *args)\n  return returned_f\n\n@x\ndef y(*args):\n  print(list(map(lambda n: n * n, args)))\n\ny(1, 2, 3)",
@@ -1818,7 +2032,8 @@
       "[100, 1, 4, 9]",
       "TypeError\n"
     ],
-    "correctAnswer": "wowza\n[100, 1, 4, 9]"
+    "correctAnswer": "wowza\n[100, 1, 4, 9]",
+    "index": 214
   },
   {
     "question": "What does the following output?\ndef x(f):\n  def r():\n    print(\"a\")\n    return f()\n  return r\n\ndef y(f):\n  def r():\n    print(\"b\")\n    return f()\n  return r\n\n@x\n@x\n@y\ndef z():\n  print('z')\n\nz()",
@@ -1829,7 +2044,8 @@
       "b\nb\na\nz",
       "b\na\na\nz\n"
     ],
-    "correctAnswer": "a\na\nb\nz"
+    "correctAnswer": "a\na\nb\nz",
+    "index": 215
   },
   {
     "question": "What does the following output?\ndef x(num):\n  def dec(f):\n    def return_f(*args):\n      for i in range(num):\n        print('hello!')\n        f(*args)\n    return return_f\n  return dec\n\n@x(2)\ndef y(n):\n  print(n)\n\ny(10)",
@@ -1840,7 +2056,8 @@
       "hello!\nhello!",
       "10\n10\n"
     ],
-    "correctAnswer": "hello!\n10\nhello!\n10"
+    "correctAnswer": "hello!\n10\nhello!\n10",
+    "index": 216
   },
   {
     "question": "What does the following output?\ndef x(num):\n  def dec(f):\n    def return_f(*args):\n      for i in range(num):\n        print(i)\n        f(*args)\n    return return_f\n  return dec\n\n@x(2)\ndef y(n):\n  print(n)\n\ny(1)",
@@ -1851,7 +2068,8 @@
       "0\n1\n1\n0",
       "1\n2\n3\n4\n"
     ],
-    "correctAnswer": "0\n1\n1\n1"
+    "correctAnswer": "0\n1\n1\n1",
+    "index": 217
   },
   {
     "question": "What can't decorators do?",
@@ -1861,22 +2079,26 @@
       "prepend code to a function",
       "replace a function"
     ],
-    "correctAnswer": "alter code in a function"
+    "correctAnswer": "alter code in a function",
+    "index": 218
   },
   {
     "question": "What does the following output?\ndef x(f):\n  return 'Hello!'\n\n@x\n@x\ndef y():\n  print('Hello!')\n\ny()",
     "answers": ["TypeError", "Hello!", "Hello!\nHello!", "None", "No output\n"],
-    "correctAnswer": "TypeError"
+    "correctAnswer": "TypeError",
+    "index": 219
   },
   {
     "question": "What does the following output?\nclass X:\n  def __init__(self, f):\n    self._f = f\n\n  def __call__(self, *args):\n    return self._f(*args, -1)\n\n@X\ndef y(n, m):\n  arr = [1, 2, 3, 4]\n  print(arr[n])\n  print(arr[m])\n\ny(-2)",
     "answers": ["3\n4", "2\n1", "4\n3", "1\n2", "4\n3\n2\n1\n"],
-    "correctAnswer": "3\n4"
+    "correctAnswer": "3\n4",
+    "index": 220
   },
   {
     "question": "What does the following output?\nclass X:\n  def __init__(self, f):\n    self._f = f\n    self._val = 1\n\n  def __call__(self, *args):\n    self._val *= 2\n    return self._f(*args, -1)\n\n  def val_transformed(self):\n    return self._val * -1\n\n@X\ndef y(n, m):\n  print(n + m)\n\ny(-2)\ny(1)\nprint(y.val_transformed())",
     "answers": ["-3\n0\n-4", "-3\n0\n3", "0\n0\n0", "3\n0\n-4", "-4\n0\n0\n"],
-    "correctAnswer": "-3\n0\n-4"
+    "correctAnswer": "-3\n0\n-4",
+    "index": 221
   },
   {
     "question": "What does the following output?\ndef x(num_of):\n  def dec(c):\n    def __init__(self, n):\n      for i in range(n):\n        setattr(self, f\"_{i + num_of}\", i)\n\n    c.__init__ = __init__\n\n    return c\n\n  return dec\n\n@x(10)\nclass Y:\n    pass\n\ny = Y(10)\n\nprint(y._18)\nprint(y._10)\nprint(y._12)",
@@ -1888,7 +2110,8 @@
       "AttributeError",
       "10\n12\n18\n"
     ],
-    "correctAnswer": "8\n0\n2"
+    "correctAnswer": "8\n0\n2",
+    "index": 222
   },
   {
     "question": "What does the following output?\ndef x(num_of):\n  def dec(c):\n    def __init__(self, n):\n      for i in range(n):\n        setattr(self, \"A\"*i, i % 2)\n\n    c.__init__ = __init__\n\n    return c\n\n  return dec\n\n@x(10)\nclass Y:\n    pass\n\ny = Y(10)\n\nprint(y.AAAA)\nprint(y.A)\nprint(y.AAAAA)",
@@ -1900,7 +2123,8 @@
       "AttributeError",
       "AAAA\nA\nAAAAA\n"
     ],
-    "correctAnswer": "0\n1\n1"
+    "correctAnswer": "0\n1\n1",
+    "index": 223
   },
   {
     "question": "What is an attribute descriptor?",
@@ -1910,12 +2134,14 @@
       "an object that can customize others values",
       "an object that, when accessed, produces different results depending on its parameters"
     ],
-    "correctAnswer": "an object that can customize its own value"
+    "correctAnswer": "an object that can customize its own value",
+    "index": 224
   },
   {
     "question": "Do all functions have a __get__?",
     "answers": ["Yes", "No"],
-    "correctAnswer": "Yes"
+    "correctAnswer": "Yes",
+    "index": 225
   },
   {
     "question": "What is passed into a __get__?",
@@ -1925,7 +2151,8 @@
       "__get__(self, attr, attrlen)",
       "__get__(self, attrlen, attr)"
     ],
-    "correctAnswer": "__get__(self, obj, objtype)"
+    "correctAnswer": "__get__(self, obj, objtype)",
+    "index": 226
   },
   {
     "question": "When is __get__ triggered?",
@@ -1935,7 +2162,8 @@
       "When the attribute it is describing is deleted",
       "When inside of another method, the attribute it is describing is called"
     ],
-    "correctAnswer": "When another object or class accesses whatever it is describing"
+    "correctAnswer": "When another object or class accesses whatever it is describing",
+    "index": 227
   },
   {
     "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class (attention to the self.)')\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
@@ -1945,7 +2173,8 @@
       "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__\nI ran",
       "calling with class (attention to the self.)\ncalling the class that has __get__\ncalling the object that has __get__\n"
     ],
-    "correctAnswer": "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\ncalling the object that has __get__"
+    "correctAnswer": "calling with class (attention to the self.)\nI ran\ncalling the class that has __get__\ncalling the object that has __get__",
+    "index": 228
   },
   {
     "question": "What does the following output?\nclass C:\n  def __get__(self, obj, objtype):\n    print(\"I ran\")\n\nclass D:\n  d = C()\n\n  def value(self):\n    print('calling with class')\n    self.d\n\n    print('calling the class that has __get__')\n    C\n\n    print('calling the object that has __get__')\n    C()\n\n\nd = D()\nd.value()",
@@ -1955,7 +2184,8 @@
       "calling with class\nI ran\ncalling the class that has __get__\nI ran\ncalling the object that has __get__\nI ran",
       "calling with class\ncalling the class that has __get__\ncalling the object that has __get__\n"
     ],
-    "correctAnswer": "calling with class\nI ran\ncalling the class that has __get__\ncalling the object that has __get__"
+    "correctAnswer": "calling with class\nI ran\ncalling the class that has __get__\ncalling the object that has __get__",
+    "index": 229
   },
   {
     "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return list(args)\n\nd = D()\nprint(d.value(20, 30))",
@@ -1967,7 +2197,8 @@
       "[0, 10, 20, 30]",
       "AttributeError\n"
     ],
-    "correctAnswer": "[10, 20, 30]"
+    "correctAnswer": "[10, 20, 30]",
+    "index": 230
   },
   {
     "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return list(args)\n\nd = D\nprint(d.value(20, 30))",
@@ -1979,7 +2210,8 @@
       "[0, 10, 20, 30]",
       "AttributeError\n"
     ],
-    "correctAnswer": "[20, 30]"
+    "correctAnswer": "[20, 30]",
+    "index": 231
   },
   {
     "question": "What does the following output?\nclass C:\n  def __init__(self, func):\n    self._func = func\n\n  def __get__(self, obj, objtype):\n    def execute(*args, **kwargs):\n      new_func = self._func.__get__(obj, objtype)\n      return new_func(10, *args, **kwargs)\n\n    return execute\n\nclass D:\n    @C\n    def value(self, *args):\n        return self\n\nd = D()\nprint(d.value(20, 30))",
@@ -1992,6 +2224,7 @@
       "[20, 30]",
       "AttributeError\n"
     ],
-    "correctAnswer": "<D class>"
+    "correctAnswer": "<D class>",
+    "index": 232
   }
 ]
